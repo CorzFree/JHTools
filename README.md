@@ -165,6 +165,7 @@ extraData.roleLevelUpTime = time(NULL); //角色最近升级时间
 [[JHToolsSDK sharedInstance] submitExtraData:extraData];
 ```
 # 二、渠道SDK接入
+
 # 三、使用工具打包
 当游戏接入完成，并接入完渠道SDK后，就可以使用工具直接出包了
 终端进入工具目录，输入./buildscript/build.py JHToolsPloy/(游戏.xcodeproj文件) JHToolsPloy/ （-n 只配置工程，不打包）
