@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "屠龙杀之皓月传世",
+  "CFBundleIdentifier": "com.zhjhsy.hycs",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "267",
+    "Channel" : 53,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "biubiupk-铁血雷霆",
+  "platform":"51wansy",
+  "appName":"屠龙杀之皓月传世",
+  "plugins" : [
+    {
+      "gameid" : "121",
+      "name" : "biubiupk"
+    }
+  ]
+}

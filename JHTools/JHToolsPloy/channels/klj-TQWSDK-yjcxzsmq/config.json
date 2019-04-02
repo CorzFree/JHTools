@@ -1,0 +1,23 @@
+{
+  "CFBundleDisplayName": "一剑成仙之神魔曲",
+  "CFBundleIdentifier": "com.taoqiwan.ajjtj.taoqiwangame",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "1039",
+    "Channel" : 23,
+    "JHToolsUrl" : "http://www.bbdjn.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "TQWSDK-昆仑界",
+  "platform":"bbdjn",
+  "appName":"一剑成仙之神魔曲",
+  "plugins" : [
+    {
+      "Channel" : "一剑成仙之神墟剑道",
+      "appId" : "019621b492a3ff6966",
+      "appSecret" : "15aa5f1213d66678be46924f1b429f7f",
+      "cpsId" : "",
+      "name" : "TQWSDK"
+    }
+  ]
+}

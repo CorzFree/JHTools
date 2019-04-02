@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "一剑成仙之仙道星辰",
+  "CFBundleIdentifier": "com.zhjhsy.xdxc",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "280",
+    "Channel" : 4,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "91WanSY-昆仑界",
+  "platform":"51wansy",
+  "appName":"一剑成仙之仙道星辰",
+  "plugins" : [
+    {
+      "gameid" : "114",
+      "name" : "91WanSY"
+    }
+  ]
+}

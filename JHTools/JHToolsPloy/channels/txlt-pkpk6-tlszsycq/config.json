@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "屠龙杀之盛延传奇",
+  "CFBundleIdentifier": "com.zhjhsy.tlszsycq",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "265",
+    "Channel" : 81,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "pkpk6-铁血雷霆",
+  "platform":"51wansy",
+  "appName":"屠龙杀之盛延传奇",
+  "plugins" : [
+    {
+      "gameid" : "8",
+      "name" : "pkpk6"
+    }
+  ]
+}

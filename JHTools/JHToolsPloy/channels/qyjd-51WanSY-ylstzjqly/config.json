@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "御龙弑天之剑气凌云",
+  "CFBundleIdentifier": "com.zhjhsy.ylstzcqb",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4040",
+    "Channel" : 1,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "51WanSY-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"御龙弑天之剑气凌云",
+  "plugins" : [
+    {
+      "gameid" : "209",
+      "name" : "51WanSY"
+    }
+  ]
+}

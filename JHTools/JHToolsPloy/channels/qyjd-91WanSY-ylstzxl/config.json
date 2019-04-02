@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "御龙弑天之仙怒",
+  "CFBundleIdentifier": "com.zhjhsy.ylstzxl",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4046",
+    "Channel" : 11,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "91WanSY-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"御龙弑天之仙怒",
+  "plugins" : [
+    {
+      "gameid" : "112",
+      "name" : "91WanSY"
+    }
+  ]
+}

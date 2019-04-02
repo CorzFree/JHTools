@@ -1,0 +1,17 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<h1>Hello</h1>
+
+首次安装需要安装本服务器的证书到系统, 否则会提示"无法连接到XXXX",请点击下面的链接安装证书<br/>
+<a href="/u8sdk.cer">下载证书文件</a><br/>
+注意：非越狱设备需要添加UDID到开发者后台才能安装
+<br/>
+<hr/>
+<h2>下载列表</h2>
+<ul>
+{% autoescape false %}
+{% for link in itmslinks %}
+<li><a href="{{link.url}}">{{link.name}}</a></li>
+{% endfor %}
+</ul>
+{% endautoescape %}

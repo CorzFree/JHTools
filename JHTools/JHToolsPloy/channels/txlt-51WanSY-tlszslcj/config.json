@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "屠龙杀之神怒裁决",
+  "CFBundleIdentifier": "com.zhjhsy.tlszslcj",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "257",
+    "Channel" : 1,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "51WanSY-铁血雷霆-非预订单",
+  "platform":"51wansy",
+  "appName":"屠龙杀之神怒裁决",
+  "plugins" : [
+    {
+      "gameid" : "207",
+      "name" : "51WanSY"
+    }
+  ]
+}

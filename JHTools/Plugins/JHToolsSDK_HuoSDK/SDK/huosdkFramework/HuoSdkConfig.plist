@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plist version="1.0">
+<dict>
+	<key>appID</key>
+	<string>6048</string>
+	<key>appKey</key>
+	<string>123</string>
+	<key>mainURL</key>
+	<string>https://api.ad1717.com/api/v7/</string>
+	<key>isLandscape</key>
+	<string>0</string>
+	<key>clientID</key>
+	<string>57</string>
+	<key>clientKey</key>
+	<string>de0e4c072f459c9b3a9845e3ecdbbe8a</string>
+	<key>uppayMode</key>
+	<string>01</string>
+	<key>agentgame</key>
+	<string>default</string>
+	<key>isShowInviteView</key>
+	<string>0</string>
+	<key>isSwitch</key>
+	<string>1</string>
+	<key>fwPayAppID</key>
+	<string>test</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "凡人仙剑录",
+  "CFBundleIdentifier": "com.zhjhsy.mhty.manba.tyy",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4050",
+    "Channel" : 23,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "QuickSDK-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"凡人仙剑录    ",
+  "plugins" : [
+    {
+      "productCode" : "46427628167636633059297140175719",
+      "name" : "QuickSDK"
+    }
+  ]
+}

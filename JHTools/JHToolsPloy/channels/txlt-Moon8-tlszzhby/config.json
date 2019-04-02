@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "屠龙杀之纵横霸业",
+  "CFBundleIdentifier": "com.zhjhsy.tlby",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "284",
+    "Channel" : 87,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "Moon8-铁血雷霆",
+  "platform":"51wansy",
+  "appName":"屠龙杀之纵横霸业",
+  "plugins" : [
+    {
+      "gameid" : "14",
+      "name" : "Moon8"
+    }
+  ]
+}

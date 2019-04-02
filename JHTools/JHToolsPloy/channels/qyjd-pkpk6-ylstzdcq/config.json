@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "御龙弑天之斗苍穹",
+  "CFBundleIdentifier": "com.zhjhsy.ylstzdcq",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4042",
+    "Channel" : 22,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "pkpk6-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"御龙弑天之斗苍穹",
+  "plugins" : [
+    {
+      "gameid" : "6",
+      "name" : "pkpk6"
+    }
+  ]
+}
