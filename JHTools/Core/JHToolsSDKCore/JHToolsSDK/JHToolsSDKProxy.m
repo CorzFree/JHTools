@@ -438,7 +438,7 @@ static NSString *const securityKey = @"YLTWbZoZ4DCQ1zrcN3rqi77ajKLwhuHv";
                @"product_id": [NSString stringWithFormat:@"%@", productInfo.productId],
                @"product_name": [NSString stringWithFormat:@"%@", productInfo.productName],
                @"product_desc": [NSString stringWithFormat:@"%@", productInfo.productDesc],
-               @"sdkid": @"",
+               @"sdkid": [NSString stringWithFormat:@"%@", self.sdkID],
                @"extension": [NSString stringWithFormat:@"%@", productInfo.extension]
                }];
     
