@@ -12,10 +12,14 @@
 		<string>YLTWbZoZ4DCQ1zrcN3rqi77ajKLwhuHv</string>
 		<key>chanelID</key>
 		<string>0</string>
+		<key>channel_str</key>
+		<string></string>
 		<key>isAppSotre</key>
 		<string>0</string>
 		<key>kefukey</key>
 		<string>86b070f9bcc5a83178fd4ed51ec7fd6b</string>
+		<key>inner_sdk_version</key>
+		<string>3.0.1</string>
 	</dict>
 </dict>
 </plist>

@@ -1,0 +1,23 @@
+{
+  "CFBundleDisplayName": "封仙诀",
+  "CFBundleIdentifier": "com.haoqi.fxj",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4062",
+    "Channel" : 26,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "KaiXinWan-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"封仙诀",
+  "plugins" : [
+    {
+      "name" : "KaiXinWanSDK",
+      "gid" : "202",
+      "secretKey" : "15ce1e291e2ac3f9f72b3ffe3f0fb89c",
+      "apikey" : "8e7c8754e43d6eabd930d701c686d0ce",
+      "version" : "3.2.0"
+    }
+  ]
+}

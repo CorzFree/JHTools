@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>YYVersion</key>
+	<string>200</string>
+	<key>boxUrl</key>
+	<string>ayxbox://</string>
+	<key>data</key>
+	<string>8b35cd1b57a3caa8cfa68e143ad06efa934bb4dbb1f392358562b61acbb2d7e0</string>
+	<key>game</key>
+	<string>wzcbios</string>
+	<key>key</key>
+	<string>29519a4a3fe8cc3fe046f63a4f78fa1d</string>
+</dict>
+</plist>

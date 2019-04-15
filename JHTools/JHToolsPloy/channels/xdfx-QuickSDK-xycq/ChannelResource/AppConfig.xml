@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<appConfigRoot>
+    <entry_script>main</entry_script>
+    <apk_version>1.01.07</apk_version>
+    <sdk_id>xiyou_sdk</sdk_id>
+    <plat_id>4057</plat_id>
+    <ditch_id>4057002</ditch_id>
+    <entry_url>http://login.jdfx.iwanxiyou.com/login/getLoginParams</entry_url>
+</appConfigRoot>

@@ -1,0 +1,19 @@
+{
+  "CFBundleDisplayName": "王族称霸",
+  "CFBundleIdentifier": "com.6bwan.yqawzcbios",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1018",
+    "Channel" : "13",
+    "JHToolsUrl" : "http://www.bbdjn.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "悠迅17i3-铁血雷霆",
+  "platform":"bbdjn",
+  "appName":"王族称霸",
+  "plugins" : [
+    {
+      "name" : "17i3"
+    }
+  ]
+}

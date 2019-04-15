@@ -47,6 +47,7 @@ def post_process(self, project, infoPlist, sdkparams):
     project.enable_bitcode("NO")
     project.preprocessor_macros("HAVE_CONFIG_H")
     project.enable_objc_exception("YES")
+    self.addAppQueriesSchemes(["weixin", "alipay", "wechat", "safepay", "uppaysdk", "uppaywallet", "uppayx1", "uppayx2", "uppayx3", "mqqapi", "alipays", "mqq", "mqqOpensdkSSoLogin", "mqqconnect", "mqqopensdkapi", "mqqopensdkapiV2", "mqzoneopensdk", "wtloginmqq", "wtloginmqq2"])
     infoPlist["NSAppTransportSecurity"] = { "NSAllowsArbitraryLoads": True }
     self.addBundleURLType(CFBundleTypeRole="Editor", CFBundleURLName="huosdk", CFBundleURLSchemes=["huosdk"+self.getBundleId()])
     self.addBundleURLType(CFBundleTypeRole="Editor", CFBundleURLName="huosdk", CFBundleURLSchemes=["huosdk6073"])

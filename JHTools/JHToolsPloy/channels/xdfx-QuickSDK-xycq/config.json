@@ -1,0 +1,21 @@
+{
+  "CFBundleDisplayName": "降妖传奇",
+  "CFBundleIdentifier": "com.zhjhsy.xycq",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "4058",
+    "Channel" : 25,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "QuickSDK-剑道飞仙",
+  "platform":"iwanxiyou",
+  "appName":"降妖传奇",
+  "plugins" : [
+    {
+      "productCode" : "91312111583068279095965490675534",
+      "productKey" : "66688703",
+      "name" : "QuickSDK"
+    }
+  ]
+}

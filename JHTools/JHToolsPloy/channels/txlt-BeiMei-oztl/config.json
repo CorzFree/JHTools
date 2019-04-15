@@ -1,0 +1,19 @@
+{
+  "CFBundleDisplayName": "欧洲屠龙",
+  "CFBundleIdentifier": "com.9099yx.bmyxtljqios",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "3054",
+    "Channel" : 12,
+    "JHToolsUrl" : "http://www.gomm5.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "BeiMei-铁血雷霆",
+  "platform":"gomm5",
+  "appName":"欧洲屠龙",
+  "plugins" : [
+    {
+      "name" : "BeiMei"
+    }
+  ]
+}

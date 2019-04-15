@@ -27,6 +27,7 @@ mods = {
 #URLScheme设置
 def post_process(self, project, infoPlist, sdkparams):
     self.addBundleURLType(CFBundleTypeRole="Editor", CFBundleURLName=self.getBundleId(), CFBundleURLSchemes=[self.getBundleId()])
+    self.addBundleURLType(CFBundleTypeRole="Editor", CFBundleURLName="wxMini",CFBundleURLSchemes=["wx9b53875413686fd1"])
     project.add_other_ldflags('-ObjC')
     project.enable_bitcode("NO")
     infoPlist['NSPhotoLibraryAddUsageDescription'] = ""
