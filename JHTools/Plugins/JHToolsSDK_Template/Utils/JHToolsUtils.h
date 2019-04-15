@@ -12,6 +12,8 @@
 
 +(NSString *)getResponseCodeWithDict:(NSDictionary *)dict;
 
++(NSString *)getResponseMsgWithDict:(NSDictionary *)dict;
+
 +(NSString *)getResponseUidWithDict:(NSDictionary *)dict;
 
 +(NSString *)stringValue:(NSString *)str;

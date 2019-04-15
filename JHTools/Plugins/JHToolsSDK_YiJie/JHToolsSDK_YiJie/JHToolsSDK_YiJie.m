@@ -31,20 +31,6 @@
     return self;
 }
 
-//-(BOOL) getBoolForParam:(NSString*)key default:(BOOL)defaultValue;
-//-(UIView*) view;
-//-(UIViewController*) viewController;
-//-(id) getInterface:(Protocol *)aProtocol;
-//-(void) eventPlatformInit:(NSDictionary*) params;
-//-(void) eventUserLogin:(NSDictionary*) params;
-//-(void) eventUserLogout:(NSDictionary*) params;
-//-(void) eventPayPaid:(NSDictionary*) params;
-//-(void) eventCustom:(NSString*)name params:(NSDictionary*)params;
-
-//-(BOOL) isInitCompleted;
-//-(void) setupWithParams:(NSDictionary*)params;
-//-(void) submitExtraData:(JHToolsUserExtraData*)data;
-
 // UIApplicationDelegate事件
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation NS_AVAILABLE_IOS(4_2){
     BOOL yjResult = [[YJAppDelegae Instance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
@@ -103,11 +89,23 @@
 }
 
 - (void)submitUserInfo:(JHToolsUserExtraData *)userlog {
-    NSDictionary* dic = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%@", userlog.roleID], @"roleId", [NSString stringWithFormat:@"%@", userlog.roleName], @"roleName", [NSString stringWithFormat:@"%@", userlog.roleLevel], @"roleLevel", [NSString stringWithFormat:@"%d", userlog.serverID], @"zoneId", [NSString stringWithFormat:@"%@", userlog.serverName], @"zoneName", nil];
+//    NSDictionary* dic = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%@", userlog.roleID], @"roleId", [NSString stringWithFormat:@"%@", userlog.roleName], @"roleName", [NSString stringWithFormat:@"%@", userlog.roleLevel], @"roleLevel", [NSString stringWithFormat:@"%d", userlog.serverID], @"zoneId", [NSString stringWithFormat:@"%@", userlog.serverName], @"zoneName", nil];
+    
+    NSDictionary* dic = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%@", userlog.roleID], @"roleId", [NSString stringWithFormat:@"%@", userlog.roleName], @"roleName", [NSString stringWithFormat:@"%@", userlog.roleLevel], @"roleLevel", @"", @"partyName",@"",@"balance",@"0",@"vip",[NSString stringWithFormat:@"%d", userlog.serverID],@"zoneId", [NSString stringWithFormat:@"%@", userlog.serverName], @"zoneName", [NSString stringWithFormat:@"%ld", userlog.roleCreateTime],@"roleCTime",[NSString stringWithFormat:@"%ld", userlog.roleLevelUpTime],@"roleLevelMTime",nil];
+    
     NSError* error;
     NSData* jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&error];
     NSString* roleData = [[NSString alloc] initWithData:jsonData encoding: NSUTF8StringEncoding];
     [YiJieOnlineHelper setRoleData:roleData];
+    
+   
+    if (userlog.dataType == TYPE_SELECT_SERVER) {
+        [YiJieOnlineHelper setData:@"enterServer" :roleData];
+    }else if(userlog.dataType == TYPE_CREATE_ROLE) {
+        [YiJieOnlineHelper setData:@"createrole" :roleData];
+    }else if(userlog.dataType == TYPE_LEVEL_UP){
+        [YiJieOnlineHelper setData:@"levelup" :roleData];
+    }
 }
 
 
@@ -172,6 +170,7 @@
             [HNPloyProgressHUD showSuccess:@"登录验证成功！"];
             self.uid = [JHToolsUtils getResponseUidWithDict:data];
             [JHToolsSDK sharedInstance].proxy.userID = self.uid;
+            [JHToolsSDK sharedInstance].proxy.sdkID = user.channelId;
             //回调返回参数
             id sdkDelegate = [JHToolsSDK sharedInstance].delegate;
             if (sdkDelegate && [sdkDelegate respondsToSelector:@selector(OnUserLogin:)]) {

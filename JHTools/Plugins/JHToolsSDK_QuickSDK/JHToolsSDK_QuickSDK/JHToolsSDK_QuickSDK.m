@@ -15,6 +15,7 @@
 
 @property (nonatomic, copy) NSString *uid;//JHToolsid
 @property (nonatomic, copy) NSString * productCode;
+@property (nonatomic, copy) NSString * productKey;
 
 @end
 
@@ -30,29 +31,17 @@
     [JHToolsSDK sharedInstance].defaultPay  = self;
     
     self.productCode = [params valueForKey:@"productCode"];
+    self.productKey = [params valueForKey:@"productKey"];
     return self;
 }
 
-//-(BOOL) getBoolForParam:(NSString*)key default:(BOOL)defaultValue;
-//-(UIView*) view;
-//-(UIViewController*) viewController;
-//-(id) getInterface:(Protocol *)aProtocol;
-//-(void) eventPlatformInit:(NSDictionary*) params;
-//-(void) eventUserLogin:(NSDictionary*) params;
-//-(void) eventUserLogout:(NSDictionary*) params;
-//-(void) eventPayPaid:(NSDictionary*) params;
-//-(void) eventCustom:(NSString*)name params:(NSDictionary*)params;
-
-//-(BOOL) isInitCompleted;
-//-(void) setupWithParams:(NSDictionary*)params;
-//-(void) submitExtraData:(JHToolsUserExtraData*)data;
 #pragma mark --- UIApplicationDelegate事件
 - (void)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     [self addNotification];
     //初始化
     SMPCQuickSDKInitConfigure *cfg = [[SMPCQuickSDKInitConfigure alloc] init];
-    cfg.productKey = @"";
-    cfg.productCode = @"";
+    cfg.productKey = self.productKey;
+    cfg.productCode = self.productCode;
     int errorcode = [[SMPCQuickSDK defaultInstance] initWithConfig:cfg application:application didFinishLaunchingWithOptions:launchOptions];
     if (errorcode != 0) {
         NSLog(@"QuickSDK初始化失败");
@@ -183,6 +172,8 @@
     gameRoleInfo.gameUserLevel = userlog.roleLevel;
     gameRoleInfo.partyName = @"";
     [[SMPCQuickSDK defaultInstance] updateRoleInfoWith:gameRoleInfo isCreate:[@"1" isEqualToString:userlog.roleLevel]];
+    
+    
 }
 
 

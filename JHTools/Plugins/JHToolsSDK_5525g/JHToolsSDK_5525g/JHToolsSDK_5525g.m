@@ -22,6 +22,17 @@
 
 @implementation JHToolsSDK_5525g
 
+-(instancetype)initWithParams:(NSDictionary *)params
+{
+    self.gameid = [params valueForKey:@"gameid"];
+    [[WanManager shareInstance] initSDKWithGameID:self.gameid delegate:self];
+    [JHToolsSDK sharedInstance].defaultUser = self;
+    [JHToolsSDK sharedInstance].defaultPay  = self;
+    NSLog(@"插件初始化成功,params=%@", params);
+    return self;
+}
+
+
 #pragma mark -- <IJHToolsUser>
 - (void) login{
     NSLog(@"-------开始调用渠道登录-------");
@@ -54,21 +65,20 @@
 
 #pragma mark -- <IJHToolsPay>
 -(void) pay:(JHToolsProductInfo*) profuctInfo{
-    /*
-    WanPayModel *payModel = [[WanPayModel alloc] init];
-    payModel.goodsName = profuctInfo.productName;//商品名称
-    payModel.money = [profuctInfo.price stringValue];//充值金额
-    payModel.balance = @"0";//余额
-    payModel.cpData = profuctInfo.extension;//厂商透传信息
-    payModel.gameid = self.gameid;//游戏id
-    payModel.gain= @"0";//元宝数
-    payModel.uid= self.channelUid;//用户id
-    payModel.serverid = profuctInfo.serverId;//区服id
-    payModel.roleName = profuctInfo.roleName;//游戏角色名
-    payModel.desc = profuctInfo.productDesc;//商品描述
-    payModel.productID = profuctInfo.productId;//产品在iTunes中的id
-    [[WanManager shareInstance] payWithPayModel:payModel];
-    */
+     WanPayModel *payModel = [[WanPayModel alloc] init];
+     payModel.goodsName = profuctInfo.productName;//商品名称
+     payModel.money = [profuctInfo.price stringValue];//充值金额
+     payModel.balance = @"0";//余额
+     payModel.cpData = profuctInfo.extension;//厂商透传信息
+     payModel.gameid = self.gameid;//游戏id
+     payModel.gain= @"0";//元宝数
+     payModel.uid= self.channelUid;//用户id
+     payModel.serverid = profuctInfo.serverId;//区服id
+     payModel.roleName = profuctInfo.roleName;//游戏角色名
+     payModel.desc = profuctInfo.productDesc;//商品描述
+     payModel.productID = profuctInfo.productId;//产品在iTunes中的id
+     [[WanManager shareInstance] payWithPayModel:payModel];
+     /*
     [[JHToolsSDK sharedInstance].proxy getOrderWith:profuctInfo responseHandler:^(NSURLResponse *response, id data, NSError *connectionError) {
         NSString *code = [JHToolsUtils getResponseCodeWithDict:data];
         if (code != nil && [code isEqualToString:@"1"]) {
@@ -90,26 +100,7 @@
             [HNPloyProgressHUD showFailure:@"创建聚合订单失败！"];
         }
     }];
-    
-}
-
--(void) closeIAP{
-    
-}
-
--(void) finishTransactionId:(NSString*)transactionId{
-    
-}
-
-#pragma mark --parent selector
--(instancetype)initWithParams:(NSDictionary *)params
-{
-    self.gameid = [params valueForKey:@"gameid"];
-    [[WanManager shareInstance] initSDKWithGameID:self.gameid delegate:self];
-    [JHToolsSDK sharedInstance].defaultUser = self;
-    [JHToolsSDK sharedInstance].defaultPay  = self;
-    NSLog(@"插件初始化成功,params=%@", params);
-    return self;
+      */
 }
 
 -(void)submitUserInfo:(JHToolsUserExtraData *)data{
@@ -121,6 +112,14 @@
     userInfo.roleName = data.roleName;
     userInfo.roleLevel = data.roleLevel;
     [[WanManager shareInstance] submitUserInfo:userInfo];
+}
+
+-(void) closeIAP{
+    
+}
+
+-(void) finishTransactionId:(NSString*)transactionId{
+    
 }
 
 #pragma mark --WanManagerDelegate
@@ -159,15 +158,15 @@
 
 // UIApplicationDelegate事件
 - (BOOL)application:(UIApplication*)application openURL:(NSURL*)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation{
-    return YES;
+    return [[WanManager shareInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL*)url options:(NSDictionary *)options{
-    return YES;
+    return [[WanManager shareInstance] application:application openURL:url options:options];
 }
 
 - (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL *)url{
-    return YES;
+    return [[WanManager shareInstance] application:application handleOpenURL:url];
 }
 
 @end

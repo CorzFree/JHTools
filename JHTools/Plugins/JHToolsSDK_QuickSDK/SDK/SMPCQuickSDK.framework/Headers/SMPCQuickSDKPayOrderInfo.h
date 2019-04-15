@@ -5,6 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface SMPCQuickSDKPayOrderInfo : NSObject
 @property(nonatomic,copy) NSString *goodsID;    //商品ID IAP时为苹果开发者后台配置的商品id，必填
@@ -21,4 +22,6 @@
 @property(nonatomic,copy) NSString *quantifier;     //商品量词，选填，可以为@""空串
 
 + (instancetype)info;//获取一个对象属性值为nil，数值属性为0的实例
+
+
 @end

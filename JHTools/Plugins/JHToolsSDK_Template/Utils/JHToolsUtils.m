@@ -18,6 +18,14 @@
     }
 }
 
++(NSString *)getResponseMsgWithDict:(NSDictionary *)dict{
+    if (![self isDictionaryEmpty:dict] && ![self isDictionaryEmpty:dict[@"state"]]) {
+        return [self stringValue:dict[@"state"][@"msg"]];
+    }else{
+        return nil;
+    }
+}
+
 +(NSString *)getResponseUidWithDict:(NSDictionary *)dict{
     if (![self isDictionaryEmpty:dict] && ![self isDictionaryEmpty:dict[@"data"]] && ![self isDictionaryEmpty:dict[@"data"][@"user"]]) {
         return [self stringValue:dict[@"data"][@"user"][@"id"]];

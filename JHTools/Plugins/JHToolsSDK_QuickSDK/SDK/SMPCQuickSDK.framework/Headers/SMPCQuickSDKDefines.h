@@ -5,8 +5,8 @@
 //
 //
 
-#ifndef QuickSDKs_SMPCQuickSDKDefines_h
-#define QuickSDKs_SMPCQuickSDKDefines_h
+#ifndef SMPCQuickSDKDefines_h
+#define SMPCQuickSDKDefines_h
 
 #pragma mark - Notification Name
 
@@ -24,7 +24,7 @@ extern NSString * const kSmpcQuickSDKNotiPlugin;           /*组件通知 见该
 extern NSString* const kSmpcQuickSDKKeyError;    /*Notification userinfo error Key */
 extern NSString* const kSmpcQuickSDKKeyMsg;      /*Notification userinfo msg   Key */
 
-// QuickSDK 的订单号
+// 订单号
 #define kSmpcQuickSDKKeyOrderId              @"orderId"
 // 游戏开发商给的订单号
 #define kSmpcQuickSDKKeyCpOrderId            @"cpOrderId"

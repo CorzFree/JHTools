@@ -1,10 +1,10 @@
 //
 //  SMPCQuickSDK.h
-//  QuickSDK
 //
 //
 //
-#define SMPC_QUICK_SDK_VERSION @"2.3.8" //QuickSDK基础库版本
+//
+#define SMPC_QUICK_SDK_VERSION @"2.3.9" //QuickSDK基础库版本
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -14,12 +14,11 @@
 #import "SMPCQuickSDKGameRoleInfo.h"
 
 
-#pragma mark -
 #pragma mark 基本信息
 
 @interface SMPCQuickSDK : NSObject
 
-#pragma mark QuickSDK实例
+#pragma mark 单例对象
 + (SMPCQuickSDK *)defaultInstance;
 
 #pragma mark 获取渠道基本信息
@@ -78,7 +77,7 @@
 
 @end
 //MARK:- 充值
-@interface SMPCQuickSDK(Recharge)
+@interface SMPCQuickSDK(Pay)
 /**
  @brief 商品购买
  *  @param orderInfo
@@ -91,14 +90,7 @@
 
 @end
 
-#pragma mark - ####个人中心 BBS 客服 ####
-
-@interface SMPCQuickSDK(Centers)
-
-@end
-
 #pragma mark - 界面控制
-
 @interface SMPCQuickSDK(UISetting)
 
 #pragma mark 浮动条
@@ -133,14 +125,6 @@
  @result 错误码
  */
 - (int)enterUserCenter;
-// 进入渠道客服
-- (int)enterCustomerCenter;
-// 进入BBS
-- (int)enterBBS;
-//游戏主动暂停时调用。恢复时SDK会发送恢复通知，恢复通知游戏可不处理
-//如果渠道没有实现这个接口，返回SMPC_QUICK_SDK_ERROR_UNSUPPORTED
-//
-- (int) pausedGame;
 //***********************应用生命周期的回调*******************//
 //在应用对应的生命周期回调中调用
 /**
@@ -178,4 +162,5 @@
 - (int)applicationWillTerminate:(UIApplication *)application;
 - (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray *  restorableObjects))restorationHandler;
+
 @end
