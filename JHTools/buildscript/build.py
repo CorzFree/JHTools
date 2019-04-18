@@ -139,66 +139,7 @@ def export_ipa(archivePath, exportPath, exportProvision, configDir = None):
         dSYMExportPath = exportPath.replace("ipa", "app.dSYM")
         dSYMPath = glob.glob(os.path.join(tempDir, "archive/dSYMs/*"))[0]
         shutil.move(dSYMPath, dSYMExportPath)
-
-        dirPath = os.path.dirname(exportPath)
-        print dirPath
-
-        appName = os.path.basename(os.path.dirname(dirPath))
-
-        #放到共享盘
-        # if  os.path.exists("/Volumes/xiyou/ios_ipa/"):
-        #     sharePath = os.path.join("/Volumes/xiyou/ios_ipa/", appName)
-        #     if not os.path.exists(sharePath):
-        #         os.makedirs(sharePath)    
-        #     system('scp -r %s /Volumes/xiyou/ios_ipa/%s/'%(dirPath, appName)) 
-        # else:
-        #     print("共享盘目录错误")    
-
-        #上传fir.im
-        print("---------------------开始上传fir.im---------------------")
-        system("fir login a4da3f304b1ca2c958a326333b44af62")
-        system('fir publish %s'%(exportPath))
-
-        #上传蒲公英
-        #system('curl -F "file=@%s" \-F "uKey=6a39afcea0b3c7e8e0c478916522020f" \-F "_api_key=8e89ca37c188330e2ab40ce873c3f559" \http://www.pgyer.com/apiv1/app/upload'%(exportPath))
-        
-
     return ret
-
-def copy_file(archivePath, exportPath, exportProvision, configDir = None):
-    tempDir = tempfile.mkdtemp()
-
-    ipaPath = glob.glob(os.path.join(tempDir, "*.ipa"))[0]
-    shutil.move(ipaPath, exportPath)
-    print(exportPath)
-
-    dSYMExportPath = exportPath.replace("ipa", "app.dSYM")
-    dSYMPath = glob.glob(os.path.join(tempDir, "archive/dSYMs/*"))[0]
-    shutil.move(dSYMPath, dSYMExportPath)
-
-    dirPath = os.path.dirname(exportPath)
-    print dirPath
-
-    appName = os.path.basename(os.path.dirname(dirPath))
-
-    #放到共享盘
-    if  os.path.exists("/Volumes/xiyou/ios_ipa/"):
-        sharePath = os.path.join("/Volumes/xiyou/ios_ipa/", appName)
-        if not os.path.exists(sharePath):
-            os.makedirs(sharePath)    
-        system('scp -r %s /Volumes/xiyou/ios_ipa/%s/'%(dirPath, appName)) 
-    else:
-        print("共享盘目录错误")    
-
-    
-def upload_firOrPgyer(exportPath):
-    #上传fir.im
-    system("fir login a4da3f304b1ca2c958a326333b44af62")
-    system('fir publish %s'%(exportPath))
-
-    #上传蒲公英
-    #system('curl -F "file=@%s" \-F "uKey=6a39afcea0b3c7e8e0c478916522020f" \-F "_api_key=8e89ca37c188330e2ab40ce873c3f559" \http://www.pgyer.com/apiv1/app/upload'%(exportPath))
-
 
 def export_last_archive(channelConfig, workspace):
     target_name = None
@@ -514,8 +455,9 @@ if __name__ == '__main__':
     parser.add_argument('-b', '--buildconfig', help=u"项目配置",  nargs='?', const='Release', default=None)
     parser.add_argument('-f', '--fast', help=u"直接编译渠道工程", action='store_true')
     parser.add_argument('-e', '--exportlast', help=u"只导出最新编译的归档，不处理xcode工程", action='store_true')
-    parser.add_argument('-s', '--copytoshare', help=u"拷贝ipa包和dSYM文件到共享盘目录", action='store_true')
-    parser.add_argument('-u', '--upload', help=u"上传ipa包到fir.im或者蒲公英", action='store_true')
+    parser.add_argument('-copy', '--copytoshare', help=u"拷贝ipa包和dSYM文件到共享盘目录", action='store_true')
+    parser.add_argument('-fir', '--fir', help=u"上传ipa包到fir.im", action='store_true')
+    parser.add_argument('-pgyer', '--pgyer', help=u"上传ipa包到pgyer", action='store_true')
 
     args = parser.parse_args()
 
@@ -646,11 +588,32 @@ if __name__ == '__main__':
         
         ipaPath = build_target(channel, args.workspace, os.path.abspath(targetXcodeProj), args.buildconfig)
 
-        print("+++++++++++++++++%s"%ipaPath)
+
+        dirPath = os.path.dirname(ipaPath)
+        appName = os.path.basename(os.path.dirname(dirPath))
+
+        print("file path:%s"%ipaPath)
         if args.copytoshare:
-            print("-------------copytoshare--------------")
-        if args.upload:
-            print("-------------upload--------------")
+            #放到共享盘
+            if  os.path.exists("/Volumes/xiyou/ios_ipa/"):
+                sharePath = os.path.join("/Volumes/xiyou/ios_ipa/", appName)
+                if not os.path.exists(sharePath):
+                    os.makedirs(sharePath)
+                print("---------------------开始拷贝到共享盘---------------------")
+                system('scp -r %s /Volumes/xiyou/ios_ipa/%s/'%(dirPath, appName))
+            else:
+                print("共享盘目录错误")
+        if args.fir:
+            #上传fir.im
+            print("---------------------开始上传fir.im---------------------")
+            system("fir login a4da3f304b1ca2c958a326333b44af62")
+            system('fir publish %s'%(ipaPath))
+
+        if args.pgyer:
+            #上传蒲公英
+            print("---------------------开始上传到蒲公英---------------------")
+            system('curl -F "file=@%s" \-F "uKey=6a39afcea0b3c7e8e0c478916522020f" \-F "_api_key=8e89ca37c188330e2ab40ce873c3f559" \http://www.pgyer.com/apiv1/app/upload'%(ipaPath))
+        
 
         print(u'处理完成！总共耗时: %s'%str(datetime.now() - starttime))
 

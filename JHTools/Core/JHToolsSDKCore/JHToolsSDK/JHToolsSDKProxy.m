@@ -406,7 +406,7 @@ static NSString *const securityKey = @"YLTWbZoZ4DCQ1zrcN3rqi77ajKLwhuHv";
 //SDK渠道登录后进行JHTools验证
 -(void)accountVerification:(NSDictionary*)params responseHandler:(JHToolsRequestCallback) handler{
     NSMutableDictionary *httpParams = [NSMutableDictionary dictionary];
-    
+    NSLog(@"sdkParams=%@; params=%@",JHToolssdk.sdkParams, params);
     NSMutableDictionary *data = [NSMutableDictionary dictionaryWithDictionary:@{@"appID": [JHToolssdk.sdkParams valueForKey:@"AppID"],@"channelID": [JHToolssdk.sdkParams valueForKey:@"Channel"], @"sdkVersionCode": [JHToolssdk.sdkParams valueForKey:@"sdkVersion"], @"deviceID": [self uniqueIdentifier], @"extension": [self dictionaryToJson:params]}];
     
     [httpParams setObject:data forKey:@"data"];
@@ -614,6 +614,7 @@ static NSString *const securityKey = @"YLTWbZoZ4DCQ1zrcN3rqi77ajKLwhuHv";
 
 -(void)sendHttpRequest:(NSDictionary *)httpParams responseHandler:(JHToolsRequestCallback)handler showProgess:(Boolean)showprogress
 {
+    NSLog(@"聚合接口请求参数:%@", httpParams);
     JHToolsProgressHUD* progressHUD = nil;
     
     // Show with the default type.
