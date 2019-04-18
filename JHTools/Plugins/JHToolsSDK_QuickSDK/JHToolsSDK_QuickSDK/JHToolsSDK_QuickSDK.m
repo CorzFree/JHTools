@@ -165,7 +165,7 @@
     SMPCQuickSDKGameRoleInfo *gameRoleInfo = [SMPCQuickSDKGameRoleInfo new];
     gameRoleInfo.serverName = userlog.serverName;
     gameRoleInfo.gameRoleName = userlog.roleName;
-    gameRoleInfo.serverId = [NSString stringWithFormat:@"%zd", userlog.serverID];
+    gameRoleInfo.serverId = [NSString stringWithFormat:@"%d", userlog.serverID];
     gameRoleInfo.gameRoleID = userlog.roleID;
     gameRoleInfo.gameUserBalance = @"0";
     gameRoleInfo.vipLevel = userlog.vip;

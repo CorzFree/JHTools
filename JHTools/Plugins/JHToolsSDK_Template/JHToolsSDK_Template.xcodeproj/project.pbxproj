@@ -295,6 +295,7 @@
 					"$(PROJECT_DIR)/SDK/ThirdLibs/ppilib",
 					"$(PROJECT_DIR)/SDK/ThirdLibs/WeChat_SDK/openSDK1.7.2",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

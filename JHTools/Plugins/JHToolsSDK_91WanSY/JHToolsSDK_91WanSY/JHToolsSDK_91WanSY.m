@@ -29,6 +29,7 @@
     [JHToolsSDK sharedInstance].defaultUser = self;
     [JHToolsSDK sharedInstance].defaultPay  = self;
     NSLog(@"插件初始化成功,params=%@", params);
+    
     return self;
 }
 

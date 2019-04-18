@@ -151,9 +151,10 @@
 }
 
 -(void)loginSuccessWithResult:(NSDictionary *)result{
+    NSLog(@"SDK登录返回数据：%@", result);
     self.channelUid = [JHToolsUtils stringValue:result[@"uid"]];
     [HNPloyProgressHUD showLoading:@"登录验证..."];
-    [[JHToolsSDK sharedInstance].proxy accountVerification:@{@"uid":self.channelUid,@"ticket":result[@"token"]} responseHandler:^(NSURLResponse *response, id data, NSError *connectionError) {
+    [[JHToolsSDK sharedInstance].proxy accountVerification:@{@"uid":self.channelUid,@"ticket":[JHToolsUtils stringValue:result[@"token"]]} responseHandler:^(NSURLResponse *response, id data, NSError *connectionError) {
         NSString *code = [JHToolsUtils getResponseCodeWithDict:data];
         if (code != nil && [code isEqualToString:@"1"]) {
             [HNPloyProgressHUD showSuccess:@"登录验证成功！"];

@@ -318,6 +318,7 @@
 					"$(PROJECT_DIR)/SDK/AliPaySDK",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../Core/JHToolsSDKCore/JHToolsSDK";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
