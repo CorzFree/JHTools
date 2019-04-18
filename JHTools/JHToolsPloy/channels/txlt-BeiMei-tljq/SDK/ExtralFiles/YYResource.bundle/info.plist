@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>YYVersion</key>
+	<string>200</string>
+	<key>boxUrl</key>
+	<string>bmyxbox://</string>
+	<key>data</key>
+	<string>77fb4643b363ea81dcbc7918e4a7af62a1da4857e9f94970de77aeff1c845465</string>
+	<key>game</key>
+	<string>tljqios</string>
+	<key>key</key>
+	<string>f1e2e80fbb631f12729137995d88d18b</string>
+</dict>
+</plist>

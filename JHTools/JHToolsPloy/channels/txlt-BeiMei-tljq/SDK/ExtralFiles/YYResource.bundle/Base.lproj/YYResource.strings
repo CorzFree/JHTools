@@ -1,0 +1,175 @@
+//余额支付
+"Balance" = "Balance payment";
+//支付宝支付
+"aliPayment" = "Alipay payment";
+//微信支付
+"wxPayment" = "WeChat payment";
+//客服转账
+"customerTransfer" = "customer service transfer";
+//立即支付
+"payImmediately" = "Pay immediately";
+//重置密码
+"reset" = "reset";
+//加载中，请稍等...
+"loading" = "loading, please wait a moment...";
+//月费悠钻
+"monthlyFee" = "monthly fee";
+//季费悠钻
+"seasonFee" = "season fee";
+//年费悠钻
+"annualFee" = "annual fee";
+//返回信息格式出错
+"returnInfoError" = "the return information format error";
+//未知原因
+"unknown" = "unknown";
+//温馨提示
+"warmTips" = "warm tips";
+//是否进行更新
+"toUpdate" = "Whether to update";
+//请进行更新
+"pleaseUpdate" = "please update";
+//请输入有效的手机号码
+"validPhone" = "Please enter a valid mobile phone number";
+//正在请求授权信息...
+"reqruestAuth" = "Requesting authorization information...";
+//您还没有设置登录密码!
+"notSetPwd" = "You have not set a login password yet!";
+//请先安装盒子客户端
+"installBoxClient" = "Please install the box client first";
+//请先绑定手机号
+"bindPhone" = "Please bind the mobile phone number first";
+//请先进行实名认证
+"realNameCert" = "Please first perform real-name certification";
+//确定
+"Determine" = "Determine";
+//用户中途取消
+"cancelMidway" = "The user cancels midway";
+//url地址不能为空
+"addressEmpty" = "the url address can not be empty";
+//订单信息不能为空
+"orderEmpty" = "Order information cannot be empty";
+//上线了
+"onTheline" = "%@ on the line";
+//用户取消授权
+"cancelAuth" = "The user cancels the authorization";
+"receive" = "receive";
+//领取中，请稍等...
+"reving" = "in the collection, please wait a moment...";
+//登录中，请稍等...
+"logining" = "Please log in, please wait...";
+//注册中，请稍等...
+"registing" = "During registration, please wait a moment...";
+//请同意相应条款
+"agreeConditions" = "Please agree to the terms and conditions";
+//网络出错
+"netError" = "Network connection is abnormal";
+//请输入用户名
+"enterUserName" = "Please enter the username";
+//请输入密码
+"enterPwd" = "Please enter a password";
+//登录
+"login" = "login";
+//忘记密码
+"forgotPwd" = "forgot password>";
+//账户注册
+"accReg" = "Account Registration>";
+//请再次输入密码
+"confirmPwd" = "Confirm password";
+//我同意
+"agree" = "I agree";
+//服务条款
+"termsService" = "Terms of Service";
+//和
+"and" = "and";
+//隐私政策
+"privacyPolicy" = "Privacy Policy";
+//注册并登录
+"regLogin" = "Register and log in";
+//请输入手机号
+"enterPhone" = "Please enter your mobile number";
+//请输入短信验证码
+"enterSMSCode" = "Please enter SMS verification code";
+//获取验证码
+"getVerifyCode" = "Get the verification code";
+//绑定
+"binding" = "binding";
+//重新发送
+"reacquire" = "Reacquire";
+//请输入真实姓名
+"enterRealName" = "Please enter your real name";
+//请输入身份证号码
+"enterIDNumber" = "Please enter the ID number";
+//盒子登录
+"boxLogin" = "box login";
+//手机登录
+"mobileLogin" = "Mobile login";
+//账号登录
+"accLogin" = "account login";
+//游客登录
+"VisitorLogin" = "Visitor login";
+//使用其他账号登录
+"loginUseOtherAcc" = "Sign in with a different account>";
+//验证码登录
+"verifyCodeLogin" = "verification code login";
+//密码登录
+"pwdLogin" = "password login";
+//选择登录方式
+"selLoginMethod" = "Select login method";
+//快速登录
+"fastLogin" = "fast login";
+//下一步
+"Next" = "Next";
+//立即更新
+"updateNow" = "Update now";
+//暂不更新
+"notUpdate" = "Not updated";
+//软件更新
+"sofewareUpdate" = "software update";
+//当前版本。。。发现新版本
+"currentVersion_findVersion" = "current version：%@，found new version：%@，%@";
+//两次密码不一致
+"towPwdDiff" = "Two password entries are different";
+//即将登录的手机号
+"loginingPhone" = "Current phone number:(+%@)%@";
+//未能获取到授权信息
+"notGetAuth" = "can't get authorization information";
+//将创建游客账号
+"visitorAccCreateTip" = "will create a visitor account for quick login, it is recommended to bind an account as soon as possible after entering the game!";
+//按照政府部门
+"governmentTip" = "According to the requirements of the government department for real-name registration, the account cannot be recharged before you bind the valid identity information, please understand.";
+//下次再说
+"nextTime" = "Next time";
+//立即绑定
+"bindImmediately" = "bind immediately";
+//为保证您的数据
+"dataSecurityTip" = "To protect your game data security, please bind a mobile phone account as soon as possible to avoid loss of game data due to brushing and other reasons!";
+//礼包内容
+"packContent" = "package content:";
+//兑换方式
+"exchangeMethod" = "Exchange method:";
+//支付失败
+"payFailed" = "payment failed";
+//支付成功
+"paySuccess" = "payment success";
+//复制兑换码
+"copyCode" = "copy the redemption code";
+//礼包
+"package" = "package";
+//客服
+"customerService" = "Customer Service";
+//用户中心
+"userCenter" = "User Center";
+//客服电话
+"customerPhone" = "Customer Service Phone";
+//客服qq
+"customerQQ" = "Customer Service QQ";
+//到期
+"expires" = "expires";
+//暂无礼包
+"noneGiftPack" = "No gift pack, so stay tuned!";
+//关注我们
+"followUS" = "Follow us";
+//切换账号
+"switchAcc" = "Switch account";
+"payment" = "Payment";
+

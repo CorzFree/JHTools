@@ -1,0 +1,23 @@
+{
+  "CFBundleDisplayName": "屠龙杀",
+  "CFBundleIdentifier": "com.aifawan.tls",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1055",
+    "Channel" : "30",
+    "JHToolsUrl" : "http://www.bbdjn.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "爱发玩-铁血雷霆",
+  "platform":"bbdjn",
+  "appName":"屠龙杀",
+  "plugins" : [
+    {
+      "name" : "BORANSDK",
+      "app_id" : "b3f82645ca9e5c27accf6de3cc24fe20",
+      "app_key" : "b4154930101c7ba3c7e80810e5c63f5a",
+      "app_scheme" : "BoRantls",
+      "app_direction" : 2
+    }
+  ]
+}

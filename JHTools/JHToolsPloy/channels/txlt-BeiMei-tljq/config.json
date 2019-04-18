@@ -1,0 +1,19 @@
+{
+  "CFBundleDisplayName": "屠龙崛起",
+  "CFBundleIdentifier": "com.6bwan.bmyxtljqios",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "3026",
+    "Channel" : 12,
+    "JHToolsUrl" : "http://www.gomm5.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "BeiMei-铁血雷霆",
+  "platform":"gomm5",
+  "appName":"屠龙崛起",
+  "plugins" : [
+    {
+      "name" : "BeiMei"
+    }
+  ]
+}

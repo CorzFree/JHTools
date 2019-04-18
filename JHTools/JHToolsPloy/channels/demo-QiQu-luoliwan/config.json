@@ -1,0 +1,22 @@
+{
+  "CFBundleDisplayName": "牧云神剑诀",
+  "CFBundleIdentifier": "com.luoliwan.mysjj",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "286",
+    "Channel" : 88,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "七趣-萝莉玩-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"牧云神剑诀",
+  "plugins" : [
+    {
+      "name" : "QiQuXYSDK",
+      "qiqu_appid" : "110100",
+      "qiqu_appkey" : "9ccb7b066fa8ebdac",
+      "qiqu_channel" : "0"  
+    }
+  ]
+}

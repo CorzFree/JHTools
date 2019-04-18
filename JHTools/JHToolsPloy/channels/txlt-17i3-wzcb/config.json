@@ -4,7 +4,7 @@
   "product_name":"client",
   "JHToolsSDK" : {
     "AppID" : "1018",
-    "Channel" : "13",
+    "Channel" : "26",
     "JHToolsUrl" : "http://www.bbdjn.com/Api/Sdk",
     "sdkVersion" : "3.0.0"
   },
