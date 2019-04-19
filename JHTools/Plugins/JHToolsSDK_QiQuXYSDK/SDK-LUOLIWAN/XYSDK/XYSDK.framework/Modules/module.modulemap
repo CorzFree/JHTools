@@ -1,6 +1,0 @@
-framework module XYSDK {
-  umbrella header "XYSDK.h"
-
-  export *
-  module * { export * }
-}
