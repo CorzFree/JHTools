@@ -1,0 +1,22 @@
+{
+  "CFBundleDisplayName": "遮天霸业",
+  "CFBundleIdentifier": "com.qiqu.ztby",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1057",
+    "Channel" : "31",
+    "JHToolsUrl" : "http://www.bbdjn.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "七趣-新蜂-铁血雷霆",
+  "platform":"bbdjn",
+  "appName":"遮天霸业",
+  "plugins" : [
+    {
+      "name" : "QiQuXYSDK",
+      "qiqu_appid" : "151",
+      "qiqu_appkey" : "657a3bd6ff46ee9a9",
+      "qiqu_channel" : "0"  
+    }
+  ]
+}
