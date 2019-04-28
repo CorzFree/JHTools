@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8D99B19205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D99B18205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.m */; };
+		F8D99B1A205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F8D99B17205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.h */; };
+		F8D99B27205CF7430081206F /* JHToolsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D99B26205CF7430081206F /* JHToolsUtils.m */; };
+		F8D99B2A205F40FD0081206F /* HNPloyProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D99B28205F40FC0081206F /* HNPloyProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8D99B12205CF3380081206F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F8D99B1A205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA690FB8226EBD55005C85B5 /* GohuoClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GohuoClient.h; sourceTree = "<group>"; };
+		CA690FB9226EBD55005C85B5 /* WXApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		CA690FBA226EBD55005C85B5 /* NSData+SPUtilsExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+SPUtilsExtras.h"; sourceTree = "<group>"; };
+		CA690FBB226EBD55005C85B5 /* SPConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPConst.m; sourceTree = "<group>"; };
+		CA690FBC226EBD55005C85B5 /* SPHTTPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPHTTPManager.h; sourceTree = "<group>"; };
+		CA690FBD226EBD55005C85B5 /* NSString+SPUtilsExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SPUtilsExtras.h"; sourceTree = "<group>"; };
+		CA690FBE226EBD55005C85B5 /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		CA690FBF226EBD55005C85B5 /* NSDictionary+SPUtilsExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SPUtilsExtras.h"; sourceTree = "<group>"; };
+		CA690FC0226EBD55005C85B5 /* TSActionAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSActionAlertView.m; sourceTree = "<group>"; };
+		CA690FC2226EBD55005C85B5 /* openssl_wrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
+		CA690FC3226EBD55005C85B5 /* APOrderInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APOrderInfo.m; sourceTree = "<group>"; };
+		CA690FC4226EBD55005C85B5 /* APAuthInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APAuthInfo.m; sourceTree = "<group>"; };
+		CA690FC5226EBD55005C85B5 /* APRSASigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APRSASigner.h; sourceTree = "<group>"; };
+		CA690FC6226EBD55005C85B5 /* APOrderInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APOrderInfo.h; sourceTree = "<group>"; };
+		CA690FC7226EBD55005C85B5 /* openssl_wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = openssl_wrapper.h; sourceTree = "<group>"; };
+		CA690FC8226EBD55005C85B5 /* APAuthInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APAuthInfo.h; sourceTree = "<group>"; };
+		CA690FC9226EBD55005C85B5 /* APRSASigner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APRSASigner.m; sourceTree = "<group>"; };
+		CA690FCA226EBD55005C85B5 /* UIWindow+SIUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+SIUtils.h"; sourceTree = "<group>"; };
+		CA690FCB226EBD55005C85B5 /* PayTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayTypeView.h; sourceTree = "<group>"; };
+		CA690FCC226EBD55005C85B5 /* SPRequestForm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRequestForm.m; sourceTree = "<group>"; };
+		CA690FCD226EBD55005C85B5 /* SPClientUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPClientUtil.h; sourceTree = "<group>"; };
+		CA690FCE226EBD55005C85B5 /* NSData+SPUtilsExtras.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+SPUtilsExtras.m"; sourceTree = "<group>"; };
+		CA690FCF226EBD55005C85B5 /* WXApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		CA690FD0226EBD55005C85B5 /* GohuoClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GohuoClient.m; sourceTree = "<group>"; };
+		CA690FD1226EBD55005C85B5 /* NSDictionary+SPUtilsExtras.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SPUtilsExtras.m"; sourceTree = "<group>"; };
+		CA690FD2226EBD55005C85B5 /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		CA690FD3226EBD55005C85B5 /* NSString+SPUtilsExtras.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SPUtilsExtras.m"; sourceTree = "<group>"; };
+		CA690FD4226EBD55005C85B5 /* SPHTTPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPHTTPManager.m; sourceTree = "<group>"; };
+		CA690FD5226EBD55005C85B5 /* SPConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPConst.h; sourceTree = "<group>"; };
+		CA690FD6226EBD55005C85B5 /* TSActionAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSActionAlertView.h; sourceTree = "<group>"; };
+		CA690FD7226EBD55005C85B5 /* SPRequestForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRequestForm.h; sourceTree = "<group>"; };
+		CA690FD8226EBD55005C85B5 /* SPClientUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPClientUtil.m; sourceTree = "<group>"; };
+		CA690FD9226EBD55005C85B5 /* PayTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayTypeView.m; sourceTree = "<group>"; };
+		CA690FDA226EBD55005C85B5 /* UIWindow+SIUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+SIUtils.m"; sourceTree = "<group>"; };
+		CA690FDC226EBE76005C85B5 /* SwiftFintechClientType2ConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFintechClientType2ConfigModel.h; sourceTree = "<group>"; };
+		CA690FDD226EBE76005C85B5 /* SwiftFintechClientType3ConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFintechClientType3ConfigModel.h; sourceTree = "<group>"; };
+		CA690FDE226EBE76005C85B5 /* SwiftFintechClientConstAppFintechConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFintechClientConstAppFintechConfig.h; sourceTree = "<group>"; };
+		CA690FDF226EBE76005C85B5 /* SwiftFintechToolSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFintechToolSDK.h; sourceTree = "<group>"; };
+		CA690FE0226EBE76005C85B5 /* libSwiftFintechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSwiftFintechSDK.a; sourceTree = "<group>"; };
+		CA690FE1226EBE76005C85B5 /* SwiftFintechClientFintechStateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFintechClientFintechStateModel.h; sourceTree = "<group>"; };
+		CA690FE2226EBE76005C85B5 /* SwiftFintechClientType1ConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFintechClientType1ConfigModel.h; sourceTree = "<group>"; };
+		CA690FE3226EBE76005C85B5 /* SwiftFintechClientConstEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFintechClientConstEnum.h; sourceTree = "<group>"; };
+		CA690FE4226EBE76005C85B5 /* SwiftFintechClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFintechClient.h; sourceTree = "<group>"; };
+		CA690FE6226EBE76005C85B5 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		CA690FE7226EBE76005C85B5 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		CA690FE8226EBE76005C85B5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		CA690FE9226EBE76005C85B5 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		CA690FEA226EBE76005C85B5 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		CA690FED226EBEF4005C85B5 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		F8D99B14205CF3380081206F /* libJHToolsSDK_GoHuoPaySDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJHToolsSDK_GoHuoPaySDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D99B17205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHToolsSDK_GoHuoPaySDK.h; sourceTree = "<group>"; };
+		F8D99B18205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHToolsSDK_GoHuoPaySDK.m; sourceTree = "<group>"; };
+		F8D99B25205CF7430081206F /* JHToolsUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHToolsUtils.h; sourceTree = "<group>"; };
+		F8D99B26205CF7430081206F /* JHToolsUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHToolsUtils.m; sourceTree = "<group>"; };
+		F8D99B28205F40FC0081206F /* HNPloyProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNPloyProgressHUD.m; sourceTree = "<group>"; };
+		F8D99B29205F40FD0081206F /* HNPloyProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPloyProgressHUD.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8D99B11205CF3380081206F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA690FB7226EBD55005C85B5 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CA690FB8226EBD55005C85B5 /* GohuoClient.h */,
+				CA690FB9226EBD55005C85B5 /* WXApiManager.h */,
+				CA690FBA226EBD55005C85B5 /* NSData+SPUtilsExtras.h */,
+				CA690FBB226EBD55005C85B5 /* SPConst.m */,
+				CA690FBC226EBD55005C85B5 /* SPHTTPManager.h */,
+				CA690FBD226EBD55005C85B5 /* NSString+SPUtilsExtras.h */,
+				CA690FBE226EBD55005C85B5 /* LoginView.h */,
+				CA690FBF226EBD55005C85B5 /* NSDictionary+SPUtilsExtras.h */,
+				CA690FC0226EBD55005C85B5 /* TSActionAlertView.m */,
+				CA690FC1226EBD55005C85B5 /* Utils */,
+				CA690FCA226EBD55005C85B5 /* UIWindow+SIUtils.h */,
+				CA690FCB226EBD55005C85B5 /* PayTypeView.h */,
+				CA690FCC226EBD55005C85B5 /* SPRequestForm.m */,
+				CA690FCD226EBD55005C85B5 /* SPClientUtil.h */,
+				CA690FCE226EBD55005C85B5 /* NSData+SPUtilsExtras.m */,
+				CA690FCF226EBD55005C85B5 /* WXApiManager.m */,
+				CA690FD0226EBD55005C85B5 /* GohuoClient.m */,
+				CA690FD1226EBD55005C85B5 /* NSDictionary+SPUtilsExtras.m */,
+				CA690FD2226EBD55005C85B5 /* LoginView.m */,
+				CA690FD3226EBD55005C85B5 /* NSString+SPUtilsExtras.m */,
+				CA690FD4226EBD55005C85B5 /* SPHTTPManager.m */,
+				CA690FD5226EBD55005C85B5 /* SPConst.h */,
+				CA690FD6226EBD55005C85B5 /* TSActionAlertView.h */,
+				CA690FD7226EBD55005C85B5 /* SPRequestForm.h */,
+				CA690FD8226EBD55005C85B5 /* SPClientUtil.m */,
+				CA690FD9226EBD55005C85B5 /* PayTypeView.m */,
+				CA690FDA226EBD55005C85B5 /* UIWindow+SIUtils.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		CA690FC1226EBD55005C85B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CA690FC2226EBD55005C85B5 /* openssl_wrapper.m */,
+				CA690FC3226EBD55005C85B5 /* APOrderInfo.m */,
+				CA690FC4226EBD55005C85B5 /* APAuthInfo.m */,
+				CA690FC5226EBD55005C85B5 /* APRSASigner.h */,
+				CA690FC6226EBD55005C85B5 /* APOrderInfo.h */,
+				CA690FC7226EBD55005C85B5 /* openssl_wrapper.h */,
+				CA690FC8226EBD55005C85B5 /* APAuthInfo.h */,
+				CA690FC9226EBD55005C85B5 /* APRSASigner.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CA690FDB226EBE76005C85B5 /* SwiftFintechSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CA690FDC226EBE76005C85B5 /* SwiftFintechClientType2ConfigModel.h */,
+				CA690FDD226EBE76005C85B5 /* SwiftFintechClientType3ConfigModel.h */,
+				CA690FDE226EBE76005C85B5 /* SwiftFintechClientConstAppFintechConfig.h */,
+				CA690FDF226EBE76005C85B5 /* SwiftFintechToolSDK.h */,
+				CA690FE0226EBE76005C85B5 /* libSwiftFintechSDK.a */,
+				CA690FE1226EBE76005C85B5 /* SwiftFintechClientFintechStateModel.h */,
+				CA690FE2226EBE76005C85B5 /* SwiftFintechClientType1ConfigModel.h */,
+				CA690FE3226EBE76005C85B5 /* SwiftFintechClientConstEnum.h */,
+				CA690FE4226EBE76005C85B5 /* SwiftFintechClient.h */,
+			);
+			path = SwiftFintechSDK;
+			sourceTree = "<group>";
+		};
+		CA690FE5226EBE76005C85B5 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				CA690FE6226EBE76005C85B5 /* WXApi.h */,
+				CA690FE7226EBE76005C85B5 /* WXApiObject.h */,
+				CA690FE8226EBE76005C85B5 /* README.txt */,
+				CA690FE9226EBE76005C85B5 /* WechatAuthSDK.h */,
+				CA690FEA226EBE76005C85B5 /* libWeChatSDK.a */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		F8D99B0B205CF3380081206F = {
+			isa = PBXGroup;
+			children = (
+				F8D99B20205CF3C70081206F /* SDK */,
+				F8D99B21205CF3C70081206F /* Utils */,
+				F8D99B16205CF3380081206F /* JHToolsSDK_GoHuoPaySDK */,
+				F8D99B15205CF3380081206F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8D99B15205CF3380081206F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D99B14205CF3380081206F /* libJHToolsSDK_GoHuoPaySDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D99B16205CF3380081206F /* JHToolsSDK_GoHuoPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				F8D99B17205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.h */,
+				F8D99B18205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.m */,
+			);
+			path = JHToolsSDK_GoHuoPaySDK;
+			sourceTree = "<group>";
+		};
+		F8D99B20205CF3C70081206F /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				CA690FED226EBEF4005C85B5 /* AlipaySDK.framework */,
+				CA690FDB226EBE76005C85B5 /* SwiftFintechSDK */,
+				CA690FE5226EBE76005C85B5 /* Wechat */,
+				CA690FB7226EBD55005C85B5 /* common */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		F8D99B21205CF3C70081206F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F8D99B29205F40FD0081206F /* HNPloyProgressHUD.h */,
+				F8D99B28205F40FC0081206F /* HNPloyProgressHUD.m */,
+				F8D99B25205CF7430081206F /* JHToolsUtils.h */,
+				F8D99B26205CF7430081206F /* JHToolsUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8D99B13205CF3380081206F /* JHToolsSDK_GoHuoPaySDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D99B1D205CF3380081206F /* Build configuration list for PBXNativeTarget "JHToolsSDK_GoHuoPaySDK" */;
+			buildPhases = (
+				F8D99B10205CF3380081206F /* Sources */,
+				F8D99B11205CF3380081206F /* Frameworks */,
+				F8D99B12205CF3380081206F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JHToolsSDK_GoHuoPaySDK;
+			productName = JHToolsSDK_GoHuoPaySDK;
+			productReference = F8D99B14205CF3380081206F /* libJHToolsSDK_GoHuoPaySDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8D99B0C205CF3380081206F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Star;
+				TargetAttributes = {
+					F8D99B13205CF3380081206F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F8D99B0F205CF3380081206F /* Build configuration list for PBXProject "JHToolsSDK_GoHuoPaySDK" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8D99B0B205CF3380081206F;
+			productRefGroup = F8D99B15205CF3380081206F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8D99B13205CF3380081206F /* JHToolsSDK_GoHuoPaySDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8D99B10205CF3380081206F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D99B27205CF7430081206F /* JHToolsUtils.m in Sources */,
+				F8D99B19205CF3380081206F /* JHToolsSDK_GoHuoPaySDK.m in Sources */,
+				F8D99B2A205F40FD0081206F /* HNPloyProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F8D99B1B205CF3380081206F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8D99B1C205CF3380081206F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8D99B1E205CF3380081206F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HW9U4B8YY9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/SDK\"",
+					"$(PROJECT_DIR)/SDK/huosdkFramework",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS/Librarys/AliPaySDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/AliPay",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/PlatformConnector",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/OpenSSL-for-iOS",
+					"$(PROJECT_DIR)/SDK",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../Core/JHToolsSDKCore/JHToolsSDK";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/IpaynowPlugin",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS/Librarys/WXSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS/Librarys/SPSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS/Librarys/AliPaySDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SPaySDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/paymentcontrol/libs",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/FWPay/lib",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ppilib",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/WeChat_SDK/openSDK1.7.2",
+					"$(PROJECT_DIR)/SDK/SwiftFintechSDK",
+					"$(PROJECT_DIR)/SDK/Wechat",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8D99B1F205CF3380081206F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HW9U4B8YY9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/SDK\"",
+					"$(PROJECT_DIR)/SDK/huosdkFramework",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS/Librarys/AliPaySDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/AliPay",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/PlatformConnector",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/OpenSSL-for-iOS",
+					"$(PROJECT_DIR)/SDK",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../Core/JHToolsSDKCore/JHToolsSDK";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/IpaynowPlugin",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS/Librarys/WXSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS/Librarys/SPSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SDKS/Librarys/AliPaySDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/SPaySDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/paymentcontrol/libs",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/FWPay/lib",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/ppilib",
+					"$(PROJECT_DIR)/SDK/ThirdLibs/WeChat_SDK/openSDK1.7.2",
+					"$(PROJECT_DIR)/SDK/SwiftFintechSDK",
+					"$(PROJECT_DIR)/SDK/Wechat",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8D99B0F205CF3380081206F /* Build configuration list for PBXProject "JHToolsSDK_GoHuoPaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D99B1B205CF3380081206F /* Debug */,
+				F8D99B1C205CF3380081206F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D99B1D205CF3380081206F /* Build configuration list for PBXNativeTarget "JHToolsSDK_GoHuoPaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D99B1E205CF3380081206F /* Debug */,
+				F8D99B1F205CF3380081206F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8D99B0C205CF3380081206F /* Project object */;
+}

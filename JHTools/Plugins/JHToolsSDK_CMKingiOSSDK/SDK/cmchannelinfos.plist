@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>promote_id</key>
+	<string>0</string>
+	<key>promote_account</key>
+	<string>自然注册</string>
+	<key>game_name</key>
+	<string>谪仙传(苹果版)</string>
+	<key>game_appid</key>
+	<string>F488356CC72A73113</string>
+	<key>game_id</key>
+	<string>72</string>
+	<key>game_key</key>
+	<string>VltUQ1lVV15cWVFTXlU=</string>
+	<key>requestURL</key>
+	<string>http://lmkj.lumokeji.cn</string>
+	<key>xiaomoScheme</key>
+	<string>xiaomoScheme</string>
+</dict>
+</plist>
