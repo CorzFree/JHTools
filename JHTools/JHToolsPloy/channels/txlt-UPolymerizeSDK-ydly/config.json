@@ -1,0 +1,23 @@
+{
+  "CFBundleDisplayName": "一刀烈焰",
+  "CFBundleIdentifier": "com.youguu.tls",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1061",
+    "Channel" : "33",
+    "JHToolsUrl" : "http://www.bbdjn.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "游龙-铁血雷霆",
+  "platform":"bbdjn",
+  "appName":"一刀烈焰",
+  "plugins" : [
+    {
+      "name" : "UPolymerizeSDK",
+      "gameid" : "105441",
+      "gamekey" : "Siw8LV/cjGmRsmNK16HJV9mhIxDH6/dTnVOkXmuKIe/1CTDeHIeDXwaOVNm2fR26",
+      "channel" : "deep19196",
+      "appversion" : "1.0"
+    }
+  ]
+}

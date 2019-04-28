@@ -1,0 +1,6 @@
+framework module CMKingiOSSDK {
+  umbrella header "CMKingiOSSDK.h"
+
+  export *
+  module * { export * }
+}

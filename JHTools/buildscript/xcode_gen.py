@@ -99,11 +99,41 @@ def XCBuildConfiguration_enable_objc_exception(self, enable_objc_exception):
 
     return modified
 
+def XCBuildConfiguration_c_language_standard(self, c_language_standard):
+    modified = False
+    base = 'buildSettings'
+    key = 'GCC_C_LANGUAGE_STANDARD'
+
+    if base not in self:
+        self[base] = PBXDict()
+
+    if (not (key in self[base])) or (self[base][key] != c_language_standard):
+        self[base][key] = c_language_standard
+        modified = True
+
+    return modified
+
+def XCBuildConfiguration_enable_objc_weak(self, enable_objc_weak):
+    modified = False
+    base = 'buildSettings'
+    key = 'CLANG_ENABLE_OBJC_WEAK'
+
+    if base not in self:
+        self[base] = PBXDict()
+
+    if (not (key in self[base])) or (self[base][key] != enable_objc_weak):
+        self[base][key] = enable_objc_weak
+        modified = True
+
+    return modified
+
 XCBuildConfiguration.set_archs = XCBuildConfiguration_set_archs
 XCBuildConfiguration.set_sdk = XCBuildConfiguration_set_sdk
 XCBuildConfiguration.enable_bitcode = XCBuildConfiguration_enable_bitcode
 XCBuildConfiguration.preprocessor_macros = XCBuildConfiguration_preprocessor_macros
 XCBuildConfiguration.enable_objc_exception = XCBuildConfiguration_enable_objc_exception
+XCBuildConfiguration.c_language_standard = XCBuildConfiguration_c_language_standard
+XCBuildConfiguration.enable_objc_weak = XCBuildConfiguration_enable_objc_weak
 
 def XcodeProject_set_archs(self, archs):
     build_configs = [b for b in self.objects.values() if b.get('isa') == 'XCBuildConfiguration']
@@ -140,11 +170,27 @@ def XcodeProject_enable_objc_exception(self, enable_objc_exception):
         if b.enable_objc_exception(enable_objc_exception):
             self.modified = True
 
+def XcodeProject_c_language_standard(self, c_language_standard):
+    build_configs = [b for b in self.objects.values() if b.get('isa') == 'XCBuildConfiguration']
+
+    for b in build_configs:
+        if b.c_language_standard(c_language_standard):
+            self.modified = True
+
+def XcodeProject_enable_objc_weak(self, enable_objc_weak):
+    build_configs = [b for b in self.objects.values() if b.get('isa') == 'XCBuildConfiguration']
+
+    for b in build_configs:
+        if b.enable_objc_weak(enable_objc_weak):
+            self.modified = True
+
 XcodeProject.set_archs = XcodeProject_set_archs
 XcodeProject.set_sdk = XcodeProject_set_sdk
 XcodeProject.enable_bitcode = XcodeProject_enable_bitcode
 XcodeProject.preprocessor_macros = XcodeProject_preprocessor_macros
 XcodeProject.enable_objc_exception = XcodeProject_enable_objc_exception
+XcodeProject.c_language_standard = XcodeProject_c_language_standard
+XcodeProject.enable_objc_weak = XcodeProject_enable_objc_weak
 
 class XcodeProcess:
     def __init__(self, baseProject, dstProject, target_name, configPath, channelConfig):

@@ -66,6 +66,12 @@ project.preprocessor_macros("HAVE_CONFIG_H")
 #11.配置enable object-c exception参数
 project.enable_objc_exception("YES")
     
+#12.配置C Language Dialet选项
+project.c_language_standard("gnu99")
+    
+#13.配置Weak References in Manual Retain Release
+project.enable_objc_weak("YES")
+    
 #三、Plugins聚合对接代码：
 #1.登录验证
     [HNPloyProgressHUD showLoading:@"登录验证..."];

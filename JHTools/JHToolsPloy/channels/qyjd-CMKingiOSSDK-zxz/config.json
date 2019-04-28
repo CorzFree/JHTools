@@ -1,0 +1,19 @@
+{
+  "CFBundleDisplayName": "谪仙传",
+  "CFBundleIdentifier": "com.xiaomo.zxz",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4064",
+    "Channel" : 28,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "xiaomo-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"谪仙传",
+  "plugins" : [
+    {
+      "name" : "CMKingiOSSDK"
+    }
+  ]
+}

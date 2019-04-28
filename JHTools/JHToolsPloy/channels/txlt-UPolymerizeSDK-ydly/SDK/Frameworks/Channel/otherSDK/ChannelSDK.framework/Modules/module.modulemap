@@ -1,0 +1,6 @@
+framework module ChannelSDK {
+  umbrella header "ChannelSDK.h"
+
+  export *
+  module * { export * }
+}
