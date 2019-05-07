@@ -5,11 +5,11 @@
   "JHToolsSDK" : {
     "AppID" : "1018",
     "Channel" : "26",
-    "JHToolsUrl" : "http://www.bbdjn.com/Api/Sdk",
+    "JHToolsUrl" : "http://www.wbkk8.com/Api/Sdk",
     "sdkVersion" : "3.0.0"
   },
   "desc" : "悠迅17i3-铁血雷霆",
-  "platform":"bbdjn",
+  "platform":"wbkk8",
   "appName":"王族称霸",
   "plugins" : [
     {

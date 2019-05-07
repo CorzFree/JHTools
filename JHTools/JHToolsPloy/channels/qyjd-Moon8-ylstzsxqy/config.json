@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "御龙弑天之神侠情缘",
+  "CFBundleIdentifier": "com.zhjhsy.sxqy",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4073",
+    "Channel" : 18,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "Moon8-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"御龙弑天之神侠情缘",
+  "plugins" : [
+    {
+      "gameid" : "20",
+      "name" : "Moon8"
+    }
+  ]
+}

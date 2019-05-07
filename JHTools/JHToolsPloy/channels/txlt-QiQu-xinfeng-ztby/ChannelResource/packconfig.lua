@@ -9,4 +9,4 @@ IS_ADAPTER_IPHONEX = true
 --lua版本，用于兼容处理
 LUA_VERSION = 1
 --SDK渠道
-SDK_CHANNEL = "JH"
+SDK_CHANNEL = "gomm5"

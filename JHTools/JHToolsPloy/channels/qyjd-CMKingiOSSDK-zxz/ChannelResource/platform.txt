@@ -6,5 +6,5 @@
     "verInfo"    : "p_32629_33386_041114",
     "appId"      : "0",
     "appRegion"  : "cn",
-    "channelKey" : "mwansdk_appstore_zxz"
+    "channelKey" : "xiaomo_appstore_zxz"
 }

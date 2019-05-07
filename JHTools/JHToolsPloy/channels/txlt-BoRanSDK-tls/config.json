@@ -5,11 +5,11 @@
   "JHToolsSDK" : {
     "AppID" : "1055",
     "Channel" : "30",
-    "JHToolsUrl" : "http://www.bbdjn.com/Api/Sdk",
+    "JHToolsUrl" : "http://www.wbkk8.com/Api/Sdk",
     "sdkVersion" : "1.0.0"
   },
   "desc" : "爱发玩-铁血雷霆",
-  "platform":"bbdjn",
+  "platform":"wbkk8",
   "appName":"屠龙杀",
   "plugins" : [
     {

@@ -113,13 +113,15 @@
 }
     
 - (void)submitUserInfo:(JHToolsUserExtraData *)userlog {
-    JHRoleModel *playModel = [[JHRoleModel alloc] init];
-    playModel.JH_roleID = [JHToolsUtils stringValue:userlog.roleID];
-    playModel.JH_rolename = [JHToolsUtils stringValue:userlog.roleName];
-    playModel.JH_serverID = [NSString stringWithFormat:@"%d", userlog.serverID];
-    playModel.JH_serverName = [JHToolsUtils stringValue:userlog.serverName];
-    playModel.JH_level = [JHToolsUtils stringValue:userlog.roleLevel];
-    [PolymerizeSDK_kit commonSdk_SetPlayerInfo:playModel];
+    if (userlog.roleID && (![@"" isEqualToString:userlog.roleID])) {
+        JHRoleModel *playModel = [[JHRoleModel alloc] init];
+        playModel.JH_roleID = [JHToolsUtils stringValue:userlog.roleID];
+        playModel.JH_rolename = [JHToolsUtils stringValue:userlog.roleName];
+        playModel.JH_serverID = [NSString stringWithFormat:@"%d", userlog.serverID];
+        playModel.JH_serverName = [JHToolsUtils stringValue:userlog.serverName];
+        playModel.JH_level = [JHToolsUtils stringValue:userlog.roleLevel];
+        [PolymerizeSDK_kit commonSdk_SetPlayerInfo:playModel];
+    }
 }
     
     

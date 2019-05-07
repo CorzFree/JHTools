@@ -3,13 +3,13 @@
   "CFBundleIdentifier": "com.qiqu.ztby",
   "product_name":"client",
   "JHToolsSDK" : {
-    "AppID" : "1057",
-    "Channel" : "31",
-    "JHToolsUrl" : "http://www.bbdjn.com/Api/Sdk",
+    "AppID" : "3056",
+    "Channel" : "23",
+    "JHToolsUrl" : "http://www.gomm5.com/Api/Sdk",
     "sdkVersion" : "1.0.0"
   },
   "desc" : "七趣-新蜂-铁血雷霆",
-  "platform":"bbdjn",
+  "platform":"gomm5",
   "appName":"遮天霸业",
   "plugins" : [
     {

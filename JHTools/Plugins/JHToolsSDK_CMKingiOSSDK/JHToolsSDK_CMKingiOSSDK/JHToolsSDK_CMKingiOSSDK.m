@@ -143,7 +143,7 @@
             NSString *orderNo = [JHToolsUtils stringValue:data[@"data"][@"order_no"]];
             OrderInfo *orderInfo = [[OrderInfo alloc] init];
             orderInfo.goodsName = [JHToolsUtils stringValue:profuctInfo.productName];
-            orderInfo.goodsPrice = [NSString stringWithFormat:@"%d", [profuctInfo.price integerValue]*100]; //单位为分
+            orderInfo.goodsPrice = [NSString stringWithFormat:@"%zd", [profuctInfo.price integerValue]*100]; //单位为分
             orderInfo.goodsDesc = [JHToolsUtils stringValue:profuctInfo.productDesc];
             orderInfo.extendInfo = orderNo;
             orderInfo.productId = [JHToolsUtils stringValue:profuctInfo.productId];//虚拟商品在APP Store中的ID
