@@ -1,0 +1,23 @@
+{
+  "CFBundleDisplayName": "屠龙杀之龙战风云",
+  "CFBundleIdentifier": "com.oppg.tlszlzfy",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1063",
+    "Channel" : "34",
+    "JHToolsUrl" : "http://www.wbkk8.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "PTSDK-铁血雷霆",
+  "platform":"wbkk8",
+  "appName":"屠龙杀之龙战风云",
+  "plugins" : [
+    {
+      "pID" : "88888888-0000-0000-0001-000000000006",
+      "cpId" : "bae62810-b12d-434d-978b-179c09b35951",
+      "gameId" : "0c3f03d2-e761-4d9f-9224-da916273835c",
+      "privateKey" : "wUHcb8QhQ1TyD9QQ8sfh3A8o3FDoESahMhL2i2jdpRvoJa8eXz6CKt7ULi9vurCW",
+      "name" : "PTSDK"
+    }
+  ]
+}

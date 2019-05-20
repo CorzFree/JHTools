@@ -1,0 +1,6 @@
+framework module LBSDK {
+  umbrella header "LBSDK.h"
+
+  export *
+  module * { export * }
+}

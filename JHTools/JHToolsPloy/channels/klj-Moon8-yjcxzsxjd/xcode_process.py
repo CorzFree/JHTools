@@ -31,3 +31,4 @@ def post_process(self, project, infoPlist, sdkparams):
     project.enable_bitcode("NO")
     infoPlist['NSPhotoLibraryAddUsageDescription'] = ""
     infoPlist['NSPhotoLibraryUsageDescription'] = ""
+    self.addBundleURLType(CFBundleTypeRole="Editor", CFBundleURLName="wxMini",CFBundleURLSchemes=["wx8cda15ef0d6ad99b"])
