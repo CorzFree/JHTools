@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupid</key>
+	<string>99999999-9999-9999-9999-999999999999</string>
+	<key>sdkver</key>
+	<string>4.5.1</string>
+	<key>bundlever</key>
+	<string>1</string>
+	<key>screenViewAddMode</key>
+	<string>1</string>
+	<key>PlatformBundle</key>
+	<dict>
+		<key>88888888-0000-0000-0001-000000000006</key>
+		<string>PingGuoGameSDK</string>
+	</dict>
+</dict>
+</plist>

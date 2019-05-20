@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Master</key>
+	<string>苹果游戏</string>
+	<key>colors</key>
+	<dict>
+		<key>basicRegBtnCL</key>
+		<string>#E72518</string>
+		<key>basicRegBorderCL</key>
+		<string>#E72518</string>
+		<key>phoneAuthCL</key>
+		<string>#E72518</string>
+		<key>phoneRegBtnCL</key>
+		<string>#E72518</string>
+		<key>phoneRegBorderCL</key>
+		<string>#E72518</string>
+		<key>userRegBtnCL</key>
+		<string>#E72518</string>
+		<key>userRegBorderCL</key>
+		<string>#E72518</string>
+		<key>findAuthCL</key>
+		<string>#E72518</string>
+		<key>webTitleCL</key>
+		<string>#E72518</string>
+		<key>realTitleCL</key>
+		<string>#E72518</string>
+		<key>bindAuthCL</key>
+		<string>#E72518</string>
+		<key>bindTitleCL</key>
+		<string>#E72518</string>
+		<key>protocolTitleCL</key>
+		<string>#E72518</string>
+		<key>noticeTitleCL</key>
+		<string>#E72518</string>
+		<key>protocolBtnCL</key>
+		<string>#E72518</string>
+		<key>protocolBtnULCL</key>
+		<string>#E72518</string>
+		<key>selectPayBorderCL</key>
+		<string>#E72518</string>
+		<key>selectCardBorderCL</key>
+		<string>#E72518</string>
+	</dict>
+</dict>
+</plist>
