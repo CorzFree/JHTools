@@ -1,0 +1,23 @@
+{
+  "CFBundleDisplayName": "玛法大陆",
+  "CFBundleIdentifier": "com.zhjhsy.mfdl",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1067",
+    "Channel" : "35",
+    "JHToolsUrl" : "http://www.wbkk8.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "LTSDK-铁血雷霆",
+  "platform":"51wansy",
+  "appName":"玛法大陆",
+  "plugins" : [
+    {
+      "gameid" : "304",
+      "loginKey" : "7916149c5cfd71714638be32056b3074",
+      "payKey" : "53dca0e4e0e41ecfba45d3eb167082ae",
+      "submitUserInfoKey" : "7916149c5cfd71714638be32056b3074",
+      "name" : "LTSDK"
+    }
+  ]
+}

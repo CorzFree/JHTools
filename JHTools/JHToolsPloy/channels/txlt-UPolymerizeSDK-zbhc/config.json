@@ -1,0 +1,23 @@
+{
+  "CFBundleDisplayName": "争霸皇城",
+  "CFBundleIdentifier": "com.youguu.hczb",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1065",
+    "Channel" : "33",
+    "JHToolsUrl" : "http://www.wbkk8.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "畅梦游龙-铁血雷霆",
+  "platform":"wbkk8",
+  "appName":"争霸皇城",
+  "plugins" : [
+    {
+      "name" : "UPolymerizeSDK",
+      "gameid" : "105473",
+      "gamekey" : "ec36f37ee100df90f1d6f2efcc1f83e1",
+      "channel" : "deep19196",
+      "appversion" : "1.0"
+    }
+  ]
+}

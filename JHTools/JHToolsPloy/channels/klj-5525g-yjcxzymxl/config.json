@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "一剑成仙之云梦仙路",
+  "CFBundleIdentifier": "com.zhjhsy.yjcxzymxl",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "323",
+    "Channel" : "32",
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "5525g-昆仑界",
+  "platform":"51wansy",
+  "appName":"一剑成仙之云梦仙路",
+  "plugins" : [
+    {
+      "gameid" : "165",
+      "name" : "5525g"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "CFBundleDisplayName": "屠龙杀",
+  "CFBundleIdentifier": "com.aofeng.tls",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "3060",
+    "Channel" : "22",
+    "JHToolsUrl" : "http://www.gomm5.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "AoFengSDK-铁血雷霆",
+  "platform":"gomm5",
+  "appName":"屠龙杀",
+  "plugins" : [
+    {
+      "name" : "AoFengSDK",
+      "gameId" : "G758000053901",
+      "clientKey" : "QjLPI7FYm4Dqb4VeoXZOLi2QwJ2bRu=="
+    }
+  ]
+}

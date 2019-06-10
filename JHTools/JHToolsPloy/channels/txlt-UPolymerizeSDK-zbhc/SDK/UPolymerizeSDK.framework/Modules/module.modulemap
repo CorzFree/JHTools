@@ -1,0 +1,6 @@
+framework module UPolymerizeSDK {
+  umbrella header "UPolymerizeSDK.h"
+
+  export *
+  module * { export * }
+}

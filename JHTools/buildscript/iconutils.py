@@ -25,7 +25,7 @@ def addIconCorner(folder, channelConfig, pluginRoot):
         icon_mark_file = os.path.join(get_plugin_dir(pluginRoot, plugin), "IconCorner", plugin.pop('IconCorner')+".png")
 
         if not os.path.isfile(icon_mark_file):
-            error("Can't find icon file: "+icon_mark_file)
+            error("plugin did not config iconmark file: "+icon_mark_file)
             continue
 
         global Image

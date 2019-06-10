@@ -1,0 +1,6 @@
+framework module AffGameSDK {
+  umbrella header "AffGameSDK.h"
+
+  export *
+  module * { export * }
+}

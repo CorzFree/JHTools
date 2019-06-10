@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "神迹大陆",
+  "CFBundleIdentifier": "com.zhjhsy.sjdl",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "6002",
+    "Channel" : "1",
+    "JHToolsUrl" : "http://www.xiyousy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "51WanSY-神迹大陆",
+  "platform":"51wansy",
+  "appName":"神迹大陆",
+  "plugins" : [
+    {
+      "gameid" : "179",
+      "name" : "51WanSY"
+    }
+  ]
+}

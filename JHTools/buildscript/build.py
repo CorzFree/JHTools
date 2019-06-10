@@ -438,14 +438,12 @@ def process_appiconsets(srcRoot, workspace, channel, pluginRoot):
                 shutil.copytree(path, baseAssetFolder)
             else:
                 print('no matched folder to override:' + path)
-
             iconutils.addIconCorner(baseAssetFolder, channel, pluginRoot)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(sys.argv[0])
 
     parser.add_argument('xcodeproj', help=u"基础xcode工程路径(扩展名为.xcodeproj)")
-
     parser.add_argument('-p', '--pluginpath', help=u"JHToolsSDK插件目录，默认为Plugins")
     parser.add_argument('workspace', help=u"工作目录")
     parser.add_argument('-c', '--channel', help=u"要处理的渠道名")

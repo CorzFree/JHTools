@@ -1,0 +1,19 @@
+{
+  "CFBundleDisplayName": "剑侠奇缘3D",
+  "CFBundleIdentifier": "com.zhjhsy.ylstzxl",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4046",
+    "Channel" : 11,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "乐聚上架包-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"剑侠奇缘3D",
+  "plugins" : [
+    {
+      "name" : "LEJUSDK"
+    }
+  ]
+}
