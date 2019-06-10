@@ -65,21 +65,6 @@
 
 #pragma mark -- <IJHToolsPay>
 -(void) pay:(JHToolsProductInfo*) profuctInfo{
-    /*
-     WanPayModel *payModel = [[WanPayModel alloc] init];
-     payModel.goodsName = profuctInfo.productName;//商品名称
-     payModel.money = [profuctInfo.price stringValue];//充值金额
-     payModel.balance = @"0";//余额
-     payModel.cpData = profuctInfo.extension;//厂商透传信息
-     payModel.gameid = self.gameid;//游戏id
-     payModel.gain= @"0";//元宝数
-     payModel.uid= self.channelUid;//用户id
-     payModel.serverid = profuctInfo.serverId;//区服id
-     payModel.roleName = profuctInfo.roleName;//游戏角色名
-     payModel.desc = profuctInfo.productDesc;//商品描述
-     payModel.productID = profuctInfo.productId;//产品在iTunes中的id
-     [[WanManager shareInstance] payWithPayModel:payModel];
-     */
     [[JHToolsSDK sharedInstance].proxy getOrderWith:profuctInfo responseHandler:^(NSURLResponse *response, id data, NSError *connectionError) {
         NSString *code = [JHToolsUtils getResponseCodeWithDict:data];
         if (code != nil && [code isEqualToString:@"1"]) {
