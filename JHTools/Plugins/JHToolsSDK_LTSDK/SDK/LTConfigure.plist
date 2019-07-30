@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>URL</key>
-	<string>https://wap.hjygames.com/api.php</string>
+	<string>http://wap.hjygames.com/api.php</string>
 	<key>GAMEROLE_URL</key>
-	<string>https://www.hjygame.com/sdk.php</string>
+	<string>http://wap.hjygames.com/sdk.php</string>
 	<key>WECHAT_APPID</key>
 	<string>wxb812fa31f3e3e96e</string>
 	<key>WECHAT_SECRET</key>

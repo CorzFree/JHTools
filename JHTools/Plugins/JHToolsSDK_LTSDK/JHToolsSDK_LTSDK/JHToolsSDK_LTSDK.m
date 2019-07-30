@@ -100,7 +100,7 @@
     role.gameRolePower = @"0";
     role.key = self.submitUserInfoKey;
     //前面是需要参与签名的参数
-    role.sign = [role makeSign];
+    role.sign = [NSString md5_32bit:[role description]];
     
     role.partyRoleId = @"0";
     role.partyRoleName = @"无";
@@ -134,7 +134,7 @@
             order.key = self.payKey;
             order.signType = @"md5";
             //前面是需要参与签名的参数
-            order.sign = [order makeSign];
+            order.sign =  [NSString md5_32bit:[order description]];;
             [[LTManager shareManager] payWithOrder:order rechargeMoney:[NSString stringWithFormat:@"%zd", profuctInfo.coinNum] appScheme:[[NSBundle mainBundle].infoDictionary objectForKey:@"CFBundleIdentifier"]];
         }else{
             [HNPloyProgressHUD showFailure:[NSString stringWithFormat:@"创建聚合订单失败！(%@)", [JHToolsUtils getResponseMsgWithDict:data]]];

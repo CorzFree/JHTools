@@ -73,8 +73,5 @@
  支付签名
  */
 @property (nonatomic, copy) NSString * key;
-/**
- 生成签名sign
- */
-- (NSString *)makeSign;
+
 @end

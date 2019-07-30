@@ -19,3 +19,4 @@ FOUNDATION_EXPORT const unsigned char LTUserVersionString[];
 #import <LTUser/LTManager.h>
 #import <LTUser/LTOrder.h>
 #import <LTUser/LTRoleModel.h>
+#import <LTUser/NSString+LT.h>

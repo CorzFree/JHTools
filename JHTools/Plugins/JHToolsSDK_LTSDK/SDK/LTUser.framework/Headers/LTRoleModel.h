@@ -119,10 +119,6 @@
  上传角色信息key
  */
 @property (nonatomic, copy) NSString * key;
-/**
- 生成签名sign
- */
-- (NSString *)makeSign;
 @end
 
 
