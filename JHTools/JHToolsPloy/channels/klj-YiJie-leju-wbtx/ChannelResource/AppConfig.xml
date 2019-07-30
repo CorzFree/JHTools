@@ -1,0 +1,23 @@
+<appConfigRoot>
+    <entry_script>main</entry_script>
+	<dbg_host>127.0.0.1</dbg_host>
+	<dbg_port>8314</dbg_port>
+    <current_version>1.00.00</current_version>
+    <patch_version>1.00.00</patch_version>
+    <fixStorage>false</fixStorage>
+    <language>CN</language>
+	<show_not_open_server>false</show_not_open_server>    
+	<isJsonServerList>false</isJsonServerList>
+	<no_update>false</no_update>
+	<download_source>noplatform</download_source>
+	<test_mode>false</test_mode>
+	<engine_code>1</engine_code>
+	<package_sub_path>0100/</package_sub_path>
+	<version_url>xianxia_android_updatelist_0100.xml</version_url>	
+	<show_server_id>0</show_server_id>
+	<showlog>false</showlog>
+	<entry_url>http://login.kl.51wansy.com/login/getLoginParams</entry_url>
+	<server_list>http://login.kl.51wansy.com/login/</server_list>
+    <plat_id>340</plat_id>
+    <ditch_id>34099002</ditch_id>
+</appConfigRoot>

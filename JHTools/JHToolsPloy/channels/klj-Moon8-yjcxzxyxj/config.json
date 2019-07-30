@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "一剑成仙之仙语仙境",
+  "CFBundleIdentifier": "com.zhjhsy.yjcxzxyxj",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "349",
+    "Channel" : 83,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "Moon8-昆仑界",
+  "platform":"51wansy",
+  "appName":"一剑成仙之仙语仙境",
+  "plugins" : [
+    {
+      "gameid" : "25",
+      "name" : "Moon8"
+    }
+  ]
+}

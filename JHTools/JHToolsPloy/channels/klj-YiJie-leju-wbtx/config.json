@@ -1,0 +1,21 @@
+{
+  "CFBundleDisplayName": "武步天下",
+  "CFBundleIdentifier": "com.leju.xwbtx",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "341",
+    "Channel" : "99",
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "yijie-昆仑界",
+  "platform":"51wansy",
+  "appName":"武步天下",
+  "plugins" : [
+    {
+        "notifyURL":"http://unionsdk.51wansy.com/api/Sdk/payNotify/appID/341/channelID/99",
+        "subChannel":"",
+        "name" : "YiJie"
+    }
+  ]
+}

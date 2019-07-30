@@ -1,0 +1,22 @@
+{
+  "CFBundleDisplayName": "武布天下",
+  "CFBundleIdentifier": "com.cq.bxwcios",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "341",
+    "Channel" : "100",
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "QuickSDK-昆仑界",
+  "platform":"51wansy",
+  "appName":"武布天下",
+  "plugins" : [
+    {
+        "subChannel":"4216046",
+        "productCode" : "47590531204726876780255385257141",
+        "productKey" : "89094307",
+        "name" : "QuickSDK"
+    }
+  ]
+}
