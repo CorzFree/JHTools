@@ -15,6 +15,7 @@
 
 @property (nonatomic, copy) NSString *uid;//JHToolsid
 @property (nonatomic, copy) NSString * productCode;
+@property (nonatomic, copy) NSString * subChannel;
 @property (nonatomic, copy) NSString * productKey;
 
 @end
@@ -30,6 +31,7 @@
     [JHToolsSDK sharedInstance].defaultUser = self;
     [JHToolsSDK sharedInstance].defaultPay  = self;
     
+    self.subChannel = [params valueForKey:@"subChannel"];
     self.productCode = [params valueForKey:@"productCode"];
     self.productKey = [params valueForKey:@"productKey"];
     return self;
@@ -168,17 +170,21 @@
     gameRoleInfo.serverId = [NSString stringWithFormat:@"%d", userlog.serverID];
     gameRoleInfo.gameRoleID = userlog.roleID;
     gameRoleInfo.gameUserBalance = @"0";
-    gameRoleInfo.vipLevel = userlog.vip;
+    gameRoleInfo.vipLevel = @"0";
     gameRoleInfo.gameUserLevel = userlog.roleLevel;
-    gameRoleInfo.partyName = @"";
+    gameRoleInfo.partyName = @"0";
     [[SMPCQuickSDK defaultInstance] updateRoleInfoWith:gameRoleInfo isCreate:[@"1" isEqualToString:userlog.roleLevel]];
-    
-    
 }
+
 
 
 #pragma mark --<IJHToolsPay>
 -(void) pay:(JHToolsProductInfo*) profuctInfo{
+    //针对乐聚Quick设置的子渠道信息
+    if (self.subChannel && ![@"" isEqualToString:self.subChannel]) {
+        profuctInfo.extension = [NSString stringWithFormat:@"%@|%@", profuctInfo.extension, self.subChannel];
+    }
+    
     [[JHToolsSDK sharedInstance].proxy getOrderWith:profuctInfo responseHandler:^(NSURLResponse *response, id data, NSError *connectionError) {
         NSString *code = [JHToolsUtils getResponseCodeWithDict:data];
         if (code != nil && [code isEqualToString:@"1"]) {
@@ -225,7 +231,7 @@
         NSString *uid = [[SMPCQuickSDK defaultInstance] userId];
         NSString *user_token = userInfo[kSmpcQuickSDKKeyUserToken];
         [HNPloyProgressHUD showLoading:@"登录验证..."];
-        [[JHToolsSDK sharedInstance].proxy accountVerification:@{@"uid":uid,@"ticket":user_token,@"product_code":self.productCode} responseHandler:^(NSURLResponse *response, id data, NSError *connectionError) {
+        [[JHToolsSDK sharedInstance].proxy accountVerification:@{@"uid":uid,@"ticket":user_token,@"product_code":[JHToolsUtils stringValue:self.productCode]} responseHandler:^(NSURLResponse *response, id data, NSError *connectionError) {
             NSString *code = [JHToolsUtils getResponseCodeWithDict:data];
             if (code != nil && [code isEqualToString:@"1"]) {
                 [HNPloyProgressHUD showSuccess:@"登录验证成功！"];

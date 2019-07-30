@@ -89,8 +89,6 @@
 }
 
 - (void)submitUserInfo:(JHToolsUserExtraData *)userlog {
-//    NSDictionary* dic = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%@", userlog.roleID], @"roleId", [NSString stringWithFormat:@"%@", userlog.roleName], @"roleName", [NSString stringWithFormat:@"%@", userlog.roleLevel], @"roleLevel", [NSString stringWithFormat:@"%d", userlog.serverID], @"zoneId", [NSString stringWithFormat:@"%@", userlog.serverName], @"zoneName", nil];
-    
     NSDictionary* dic = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%@", userlog.roleID], @"roleId", [NSString stringWithFormat:@"%@", userlog.roleName], @"roleName", [NSString stringWithFormat:@"%@", userlog.roleLevel], @"roleLevel", @"", @"partyName",@"",@"balance",@"0",@"vip",[NSString stringWithFormat:@"%d", userlog.serverID],@"zoneId", [NSString stringWithFormat:@"%@", userlog.serverName], @"zoneName", [NSString stringWithFormat:@"%ld", userlog.roleCreateTime],@"roleCTime",[NSString stringWithFormat:@"%ld", userlog.roleLevelUpTime],@"roleLevelMTime",nil];
     
     NSError* error;
@@ -111,13 +109,6 @@
 
 #pragma mark --<IJHToolsPay>
 -(void) pay:(JHToolsProductInfo*) profuctInfo{
-//    if (profuctInfo.extension == nil) {
-//        profuctInfo.extension = @"";
-//    }
-//    NSDictionary *extension = @{@"extension":profuctInfo.extension,@"role_id":[NSString stringWithFormat:@"%@", profuctInfo.roleId],@"role_name":[NSString stringWithFormat:@"%@", profuctInfo.roleName],@"server_id":[NSString stringWithFormat:@"%@",profuctInfo.serverId],@"server_name":[NSString stringWithFormat:@"%@", profuctInfo.serverName],@"product_id":[NSString stringWithFormat:@"%@", profuctInfo.productId],@"product_name":[NSString stringWithFormat:@"%@", profuctInfo.productName],@"product_desc":[NSString stringWithFormat:@"%@", profuctInfo.productDesc]};
-//    NSString *extensionStr = [[JHToolsUtils dictionaryToJson:extension] stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-//    NSLog(@"%@", extensionStr);
-//    [YiJieOnlineHelper pay:[profuctInfo.price intValue]*100 :profuctInfo.productName :1 :extensionStr :self.notifyURL :self];
     [[JHToolsSDK sharedInstance].proxy getOrderWith:profuctInfo responseHandler:^(NSURLResponse *response, id data, NSError *connectionError) {
         NSString *code = [JHToolsUtils getResponseCodeWithDict:data];
         if (code != nil && [code isEqualToString:@"1"]) {
