@@ -408,9 +408,9 @@ static NSString *const securityKey = @"YLTWbZoZ4DCQ1zrcN3rqi77ajKLwhuHv";
     NSMutableDictionary *httpParams = [NSMutableDictionary dictionary];
     NSLog(@"sdkParams=%@; params=%@",JHToolssdk.sdkParams, params);
     NSMutableDictionary *data = [NSMutableDictionary dictionaryWithDictionary:@{@"appID": [JHToolssdk.sdkParams valueForKey:@"AppID"],@"channelID": [JHToolssdk.sdkParams valueForKey:@"Channel"], @"sdkVersionCode": [JHToolssdk.sdkParams valueForKey:@"sdkVersion"], @"deviceID": [self uniqueIdentifier], @"extension": [self dictionaryToJson:params]}];
-    
     [httpParams setObject:data forKey:@"data"];
     [httpParams setObject:@"login" forKey:@"service"];
+    
     NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
     [httpParams setObject:[NSString stringWithFormat:@"%.0f", time] forKey:@"time"];
     
@@ -608,7 +608,6 @@ static NSString *const securityKey = @"YLTWbZoZ4DCQ1zrcN3rqi77ajKLwhuHv";
 - (NSURL*) getJHToolsServerUrl:(NSString*)relativePath
 {
     NSURL *JHToolsUrl = [NSURL URLWithString:[JHToolssdk.sdkParams valueForKey:@"JHToolsUrl"]];
-    
     return [NSURL URLWithString:relativePath relativeToURL:JHToolsUrl];
 }
 
