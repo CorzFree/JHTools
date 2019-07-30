@@ -68,7 +68,6 @@ def XCBuildConfiguration_preprocessor_macros(self, preprocessorMacros):
     if (not (key in self[base])) or (self[base][key] != preprocessorMacros):
         self[base][key] = preprocessorMacros
         modified = True
-
     return modified
 
 def XCBuildConfiguration_enable_bitcode(self, enable):
