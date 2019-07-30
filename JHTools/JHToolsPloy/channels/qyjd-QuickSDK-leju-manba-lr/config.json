@@ -1,0 +1,21 @@
+{
+  "CFBundleDisplayName": "剑踪",
+  "CFBundleIdentifier": "com.leju.lr.manba",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4082",
+    "Channel" : 29,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "QuickSDK-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"剑踪",
+  "plugins" : [
+    {
+      "productCode" : "16675925572036315201168422754615",
+      "productKey" : "37387543",
+      "name" : "QuickSDK"
+    }
+  ]
+}

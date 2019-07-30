@@ -1,0 +1,22 @@
+{
+  "CFBundleDisplayName": "御龙弑天之剑侠青云",
+  "CFBundleIdentifier": "com.zhjhsy.ylstzjxqy",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4098",
+    "Channel" : 39,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "SQSDK-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"御龙弑天之剑侠青云",
+  "plugins" : [
+    {
+        "name" : "SQSDK",
+        "productCode":"25",
+        "productKey":"9c1fda4ddd0f4f20aad519fa9a250c05",
+        "gameKey":"cz90cjkSoP1BozwQe3kUd3cRem5ydS5yc3sTd6cUpjoVp3w"
+    }
+  ]
+}

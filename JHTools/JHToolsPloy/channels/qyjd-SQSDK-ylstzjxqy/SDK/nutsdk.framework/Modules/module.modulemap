@@ -1,0 +1,6 @@
+framework module nutsdk {
+  umbrella header "nutsdk.h"
+
+  export *
+  module * { export * }
+}
