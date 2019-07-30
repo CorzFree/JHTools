@@ -1,0 +1,19 @@
+{
+  "CFBundleDisplayName": "皇图无双IOS",
+  "CFBundleIdentifier": "com.zhjhsy.htws",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1071",
+    "Channel" : "37",
+    "JHToolsUrl" : "http://www.wbkk8.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "HuoSDK-铁血雷霆",
+  "platform":"wbkk8",
+  "appName":"皇图无双IOS",
+  "plugins" : [
+    {
+      "name" : "HuoSDK"
+    }
+  ]
+}

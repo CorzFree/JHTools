@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appID</key>
+	<string>6025</string>
+	<key>appKey</key>
+	<string>d935fe03d5adb88b86b400518d4fa8a2</string>
+	<key>mainURL</key>
+	<string>https://cnapi.17aiyouxi.com/api/v7/</string>
+	<key>isLandscape</key>
+	<string>1</string>
+	<key>clientID</key>
+	<string>32</string>
+	<key>clientKey</key>
+	<string>c7b0cba37bb80f41f174beb91f6349ae</string>
+	<key>uppayMode</key>
+	<string>01</string>
+	<key>agentgame</key>
+	<string>default</string>
+	<key>isShowInviteView</key>
+	<string>0</string>
+	<key>isSwitch</key>
+	<string>1</string>
+	<key>fwPayAppID</key>
+	<string>test</string>
+</dict>
+</plist>

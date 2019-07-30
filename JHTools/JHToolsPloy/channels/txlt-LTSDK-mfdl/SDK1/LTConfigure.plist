@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URL</key>
+	<string>http://wap.hjygames.com/api.php</string>
+	<key>GAMEROLE_URL</key>
+	<string>http://wap.hjygames.com/sdk.php</string>
+	<key>WECHAT_APPID</key>
+	<string>wxb812fa31f3e3e96e</string>
+	<key>WECHAT_SECRET</key>
+	<string>6c7fb8421a5ceb01676490ea020a3388</string>
+	<key>QQ_APPID</key>
+	<string>101480145</string>
+	<key>SINA_KEY</key>
+	<string>2899996505</string>
+	<key>SINA_SECRET</key>
+	<string>9f33d070a0edcbcfce84a9c2092b0292</string>
+	<key>Request_version</key>
+	<string>3.0</string>
+	<key>Request_key</key>
+	<string>f60808d9470dceab4351db092227c4ad</string>
+</dict>
+</plist>

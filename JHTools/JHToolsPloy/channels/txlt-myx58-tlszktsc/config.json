@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "屠龙杀之狂徒沙城",
+  "CFBundleIdentifier": "com.zhjhsy.tlszktsc",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "337",
+    "Channel" : "66",
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "myx58-铁血雷霆",
+  "platform":"51wansy",
+  "appName":"屠龙杀之狂徒沙城",
+  "plugins" : [
+    {
+      "gameid" : "179",
+      "name" : "myx58"
+    }
+  ]
+}
