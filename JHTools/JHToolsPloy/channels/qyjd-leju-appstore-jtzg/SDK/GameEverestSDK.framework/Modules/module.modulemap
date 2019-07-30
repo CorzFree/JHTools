@@ -1,0 +1,4 @@
+framework module GameEverestSDK {
+  header "GameEverestSDK-Swift.h"
+  requires objc
+}

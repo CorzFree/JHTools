@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "御龙弑天之苍穹国战",
+  "CFBundleIdentifier": "com.zhjhsy.ylstzcqgz",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4084",
+    "Channel" : "21",
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "5525g-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"御龙弑天之苍穹国战",
+  "plugins" : [
+    {
+      "gameid" : "171",
+      "name" : "5525g"
+    }
+  ]
+}
