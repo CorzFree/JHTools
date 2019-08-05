@@ -11,7 +11,9 @@
 #import "HNPloyProgressHUD.h"
 #import <SQSDK/SQSDK.h>
 
-@interface JHToolsSDK_SQSDK()
+@interface JHToolsSDK_SQSDK(){
+    BOOL _islogin;
+}
 
 @property (nonatomic, copy) NSString *productCode;
 @property (nonatomic, copy) NSString *productKey;
@@ -97,7 +99,9 @@
 }
     
 - (void) logout{
-    [SQSDK logout];
+    if (_islogin) {
+        [SQSDK logout];
+    }
 }
     
 - (void) switchAccount{
@@ -114,8 +118,10 @@
 }
     
 - (void)submitUserInfo:(JHToolsUserExtraData *)userlog {
-    SQSDKRoleInfo *roleInfo = [SQSDKRoleInfo roleInfoWithAreaCode:[NSString stringWithFormat:@"%d", userlog.serverID] areaName:[JHToolsUtils stringValue:userlog.serverName] roleCode:[JHToolsUtils stringValue:userlog.roleID] roleName:[JHToolsUtils stringValue:userlog.roleName] roleLevel:[JHToolsUtils stringValue:userlog.roleLevel] roleCreateDate:[NSString stringWithFormat:@"%ld", userlog.roleCreateTime] roleSex:@"0" proCode:@"0" proName:@"0" partyCode:@"0" partyName:@"0" partyLevel:@"0" partyChairman:@"0" vipLevel:@"0" goldValue:0 expandInfo:@""];
-    [SQSDK report:roleInfo];
+    if (userlog.dataType == TYPE_CREATE_ROLE || userlog.dataType == TYPE_LEVEL_UP || userlog.dataType == TYPE_ENTER_GAME) {
+        SQSDKRoleInfo *roleInfo = [SQSDKRoleInfo roleInfoWithAreaCode:[NSString stringWithFormat:@"%d", userlog.serverID] areaName:[JHToolsUtils stringValue:userlog.serverName] roleCode:[JHToolsUtils stringValue:userlog.roleID] roleName:[JHToolsUtils stringValue:userlog.roleName] roleLevel:[JHToolsUtils stringValue:userlog.roleLevel] roleCreateDate:[NSString stringWithFormat:@"%ld", userlog.roleCreateTime] roleSex:@"0" proCode:@"0" proName:@"0" partyCode:@"0" partyName:@"0" partyLevel:@"0" partyChairman:@"0" vipLevel:@"0" goldValue:0 expandInfo:nil];
+        [SQSDK report:roleInfo];
+    }
 }
     
     
@@ -126,7 +132,12 @@
         if (code != nil && [code isEqualToString:@"1"]) {
             NSString *orderNo = [JHToolsUtils stringValue:data[@"data"][@"order_no"]];
 
-            
+            //角色信息
+            NSMutableDictionary *expandInfo = [NSMutableDictionary dictionary];
+            expandInfo[@"AreaName"] = [JHToolsUtils stringValue:profuctInfo.serverName];
+            expandInfo[@"AreaCode"] = [JHToolsUtils stringValue:profuctInfo.serverId];
+            expandInfo[@"RoleCode"] = [JHToolsUtils stringValue:profuctInfo.roleId];
+            expandInfo[@"RoleName"] = [JHToolsUtils stringValue:profuctInfo.roleName];
             SQSDKPayInfo *payInfo = [SQSDKPayInfo payInfoWithCpOrderNo:orderNo
                                                             orderTitle:[JHToolsUtils stringValue:profuctInfo.productName]
                                                               itemCode:[JHToolsUtils stringValue:profuctInfo.productId]
@@ -139,7 +150,7 @@
                                                               RoleCode:[JHToolsUtils stringValue:profuctInfo.roleId]
                                                               RoleName:[JHToolsUtils stringValue:profuctInfo.roleName]
                                                           callBackData:orderNo
-                                                            expandInfo:nil
+                                                            expandInfo:expandInfo
                                      ];
             [SQSDK pay:payInfo];
         }else{
@@ -172,6 +183,7 @@
         NSString *code = [JHToolsUtils getResponseCodeWithDict:data];
         if (code != nil && [code isEqualToString:@"1"]) {
             [HNPloyProgressHUD showSuccess:@"登录验证成功！"];
+            _islogin = YES;
             [JHToolsSDK sharedInstance].proxy.userID = [JHToolsUtils getResponseUidWithDict:data];
             //回调返回参数
             id sdkDelegate = [JHToolsSDK sharedInstance].delegate;
@@ -186,6 +198,7 @@
 
 - (void)logoutNotification:(NSNotification *)notification {
     NSLog(@"%s", __FUNCTION__);
+    _islogin = NO;
     id sdkDelegate = [JHToolsSDK sharedInstance].delegate;
     if (sdkDelegate && [sdkDelegate respondsToSelector:@selector(OnUserLogout:)]) {
         [sdkDelegate OnUserLogout:nil];
