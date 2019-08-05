@@ -1,5 +1,5 @@
 {
-  "CFBundleDisplayName": "剑踪",
+  "CFBundleDisplayName": "龙刃",
   "CFBundleIdentifier": "com.leju.lr.manba",
   "product_name":"Unity-iPhone",
   "JHToolsSDK" : {
@@ -10,7 +10,7 @@
   },
   "desc" : "QuickSDK-青云剑道",
   "platform":"iwanxiyou",
-  "appName":"剑踪",
+  "appName":"龙刃",
   "plugins" : [
     {
       "productCode" : "16675925572036315201168422754615",
