@@ -1,0 +1,6 @@
+framework module XSDKFramework {
+  umbrella header "XSDKFramework.h"
+
+  export *
+  module * { export * }
+}
