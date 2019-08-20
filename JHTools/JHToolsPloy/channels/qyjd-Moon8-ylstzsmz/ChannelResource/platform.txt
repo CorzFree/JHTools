@@ -3,7 +3,7 @@
     "platformId" : "2",
     "publishIno" : "著作权人：上海元起网络科技有限公司 出版单位：上海元起网络科技有限公司\n文网游备字 沪新出科数【2017】776号 新广出审【2017】6620号 出版物号：ISBN 978-7-7979-9780-5",
     "serverKey"  : "http://centermhtx2.iosgh.shyouai.com:8001/",
-    "verInfo"    : "p_34856_35980_042914",
+    "verInfo": "p_56207_55637_081318",
     "appId"      : "0",
     "appRegion"  : "cn",
     "channelKey" : "moon8_appstore_smz"

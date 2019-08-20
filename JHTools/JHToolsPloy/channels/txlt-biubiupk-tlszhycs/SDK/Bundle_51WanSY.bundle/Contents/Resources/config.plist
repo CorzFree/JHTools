@@ -7,7 +7,7 @@
 	<key>biubiupk</key>
 	<dict>
 		<key>domain</key>
-		<string>http://www.biubiupk.com</string>
+		<string>http://106.53.28.149:7669</string>
 		<key>secretKey</key>
 		<string>abf02c516ba7fab6279e2b9b576886f1</string>
 		<key>kefukey</key>
