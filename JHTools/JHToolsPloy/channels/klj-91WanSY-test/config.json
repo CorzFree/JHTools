@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "一剑成仙之情缘依旧",
+  "CFBundleIdentifier": "com.zhjhsy.lsxxzqyyj",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "245",
+    "Channel" : 4,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "91WanSY-昆仑界",
+  "platform":"51wansy",
+  "appName":"一剑成仙之情缘依旧",
+  "plugins" : [
+    {
+      "gameid" : "109",
+      "name" : "91WanSY"
+    }
+  ]
+}

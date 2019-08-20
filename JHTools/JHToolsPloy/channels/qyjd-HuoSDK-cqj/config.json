@@ -1,0 +1,19 @@
+{
+  "CFBundleDisplayName": "苍穹诀",
+  "CFBundleIdentifier": "com.zhjhsy.sycq",
+  "product_name":"Unity-iPhone",
+  "JHToolsSDK" : {
+    "AppID" : "4054",
+    "Channel" : 24,
+    "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "HuoSDK-青云剑道",
+  "platform":"iwanxiyou",
+  "appName":"苍穹诀",
+  "plugins" : [
+    {
+      "name" : "HuoSDK"
+    }
+  ]
+}

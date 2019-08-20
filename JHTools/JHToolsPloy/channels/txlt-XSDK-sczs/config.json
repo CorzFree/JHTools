@@ -1,0 +1,23 @@
+{
+  "CFBundleDisplayName": "沙城战神",
+  "CFBundleIdentifier": "com.shunyou.sczs",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1079",
+    "Channel" : "40",
+    "JHToolsUrl" : "http://www.wbkk8.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "顺游-铁血雷霆",
+  "platform":"wbkk8",
+  "appName":"沙城战神",
+  "plugins" : [
+    {
+      "name" : "XSDK",
+      "appID" : "14",
+      "appKey" : "ZWEi5XLgVenQ",
+      "shareInstallKey" : "7BBK2F6E7EEBK6",
+      "payNotifyURL" : "http://www.wbkk8.com/api/Sdk/payNotify/appID/1079/channelID/40"
+    }
+  ]
+}
