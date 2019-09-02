@@ -1,6 +1,0 @@
-framework module LTUser {
-  umbrella header "LTUser.h"
-
-  export *
-  module * { export * }
-}
