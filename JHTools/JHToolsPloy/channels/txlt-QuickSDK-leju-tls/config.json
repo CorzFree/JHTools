@@ -1,0 +1,21 @@
+{
+  "CFBundleDisplayName": "屠龙杀",
+  "CFBundleIdentifier": "com.zhjhsy.tls",
+  "product_name":"client",
+  "JHToolsSDK" : {
+    "AppID" : "1083",
+    "Channel" : 39,
+    "JHToolsUrl" : "http://www.wbkk8.com/Api/Sdk",
+    "sdkVersion" : "1.0.0"
+  },
+  "desc" : "QuickSDK-乐聚-铁血雷霆",
+  "platform":"wbkk8",
+  "appName":"屠龙杀",
+  "plugins" : [
+    {
+      "productCode" : "87206171180337995301810091420788",
+      "productKey" : "51923644",
+      "name" : "QuickSDK"
+    }
+  ]
+}
