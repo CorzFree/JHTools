@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "剑诀九天",
+  "CFBundleIdentifier": "com.zhjhsy.jjjt",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "94",
+    "Channel" : 4,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "91WanSY-昆仑界",
+  "platform":"51wansy",
+  "appName":"剑诀九天",
+  "plugins" : [
+    {
+      "gameid" : "94",
+      "name" : "91WanSY"
+    }
+  ]
+}

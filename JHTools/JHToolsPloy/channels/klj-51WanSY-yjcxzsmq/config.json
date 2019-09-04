@@ -1,0 +1,20 @@
+{
+  "CFBundleDisplayName": "一剑成仙之神魔曲",
+  "CFBundleIdentifier": "com.zhjhsy.ajjtj",
+  "product_name":"TDGamePack",
+  "JHToolsSDK" : {
+    "AppID" : "217",
+    "Channel" : 1,
+    "JHToolsUrl" : "http://unionsdk.51wansy.com/Api/Sdk",
+    "sdkVersion" : "3.0.0"
+  },
+  "desc" : "51WanSY-昆仑界",
+  "platform":"51wansy",
+  "appName":"一剑成仙之神魔曲",
+  "plugins" : [
+    {
+      "gameid" : "185",
+      "name" : "51WanSY"
+    }
+  ]
+}

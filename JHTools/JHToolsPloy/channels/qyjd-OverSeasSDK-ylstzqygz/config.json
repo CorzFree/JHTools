@@ -1,9 +1,9 @@
 {
   "CFBundleDisplayName": "御龙弑天之青云决国战",
-  "CFBundleIdentifier": "faVD7cyORy1AVpls",
+  "CFBundleIdentifier": "com.zhjhsy.ylstzqygz.hw",
   "product_name":"Unity-iPhone",
   "JHToolsSDK" : {
-    "AppID" : "4030",
+    "AppID" : "4088",
     "Channel" : 18,
     "JHToolsUrl" : "http://unionsdk.iwanxiyou.com/Api/Sdk",
     "sdkVersion" : "3.0.0"
@@ -13,7 +13,7 @@
   "appName":"御龙弑天之青云决国战",
   "plugins" : [
     {
-      "gameid" : "4",
+      "gameid" : "27",
       "name" : "Moon8"
     }
   ]
