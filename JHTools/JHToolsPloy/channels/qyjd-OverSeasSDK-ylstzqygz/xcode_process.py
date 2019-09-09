@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 mods = {
-    "group": "JHToolsSDK_Moon8",
+    "group": "JHToolsSDK_OverSeasSDK",
     "files": [
-        "libJHToolsSDK_Moon8.a"
+        "libJHToolsSDK_OverSeasSDK.a"
     ],
     "folders":[
         "SDK"

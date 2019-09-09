@@ -1,6 +1,6 @@
 {
   "CFBundleDisplayName": "御龙弑天之青云决国战",
-  "CFBundleIdentifier": "com.zhjhsy.ylstzqygz.hw",
+  "CFBundleIdentifier": "com.zhjhsy.ylstzqygz.voverseas",
   "product_name":"Unity-iPhone",
   "JHToolsSDK" : {
     "AppID" : "4088",
@@ -14,7 +14,7 @@
   "plugins" : [
     {
       "gameid" : "27",
-      "name" : "Moon8"
+      "name" : "OverSeasSDK"
     }
   ]
 }
