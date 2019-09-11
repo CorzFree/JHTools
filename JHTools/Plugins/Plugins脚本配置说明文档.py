@@ -49,8 +49,8 @@ self.addBundleURLType([self.getBundleId()])
 self.embed_binary("SDK/CYouKit.framework")
 
 #7.info.plist文件新增数据
-infoPlist['sdk_orientaion'] = "0"
-self.updateInfoPlist({“U8SDK”:{“key”:”value”}})#添加字典
+infoPlist['key'] = "0"
+self.updateInfoPlist({“key”:{“key”:”value”}})#添加字典
 
 #8.设置Enable Bitcode
 project.enable_bitcode("NO")
